@@ -47,8 +47,8 @@ const renderProjects = (edges) => (
   </ul>
 )
 
-const metaDescription = 'Harrison Liddiard is a software engineer in the California San Francisco Bay Area working at PayPal. See his projects and resume';
-export default ({ data }) => <Layout page="front" pageTitle="Home", metaDescription={metaDescription}>
+const metaDescription = 'Harrison Liddiard is a software engineer in the California San Francisco Bay Area working at PayPal. See his projects and resume.';
+export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescription={metaDescription}>
   <header>
       <h1 className="name">Harrison Liddiard</h1>
       <p className="tagline">Software engineer at PayPal, event coordination enthusiast, aspiring pilot</p>
