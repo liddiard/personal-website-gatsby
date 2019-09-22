@@ -1,0 +1,200 @@
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+$PRIMARY_COLOR: rgb(0, 40, 180);
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url('/img/website_background.svg') repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Muli', sans-serif;
+    text-shadow: 0 0 4px white;
+    margin: 2em;
+    font-size: 1.1em;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: $PRIMARY_COLOR;
+}
+
+p {
+    line-height: 1.45;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overpass', sans-serif;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+h1.name {
+    font-size: 4em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav {
+    margin-bottom: 1.5em;
+    // specificity overrides for resume styles
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        font-weight: 600;
+
+        li {
+            display: inline-block;
+            padding-right: 1em;
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+}
+
+main.front, main.credits {
+    max-width: 400px;
+}
+
+main.front {
+    .tagline {
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 1.35;
+    }
+    
+    ul.projects {
+        li {
+            margin: 0.5em 0;
+        }
+    }
+}
+
+main.project {
+    max-width: 1280px;
+
+    article {
+        float: left;
+        width: 33%;
+    
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+            line-height: 1.2;
+        }
+    }
+
+    aside {
+        float: right;
+        width: 67%
+    }
+
+    img, video {
+        max-width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    figure {
+        margin-right: 0;
+    }
+
+    figcaption {
+        margin: 0.5em 0 1.5em;
+    }
+
+    .external-link {
+        font-size: 1.2em;
+        display: inline-block;
+        margin-bottom: 1em;
+        font-weight: 600;
+    }
+
+    .project-info {
+        line-height: 1.45;
+        margin-bottom: 1em;
+    }
+
+    @include media-query($on-laptop) {
+        article, aside {
+            width: 100%;
+            float: none;
+        }
+
+        figure {
+            margin: 0;
+        }
+    }
+}
+
+main.credits {
+    li {
+        margin: 0.5em 0;
+        font-size: 0.9em;
+    }
+
+    .license {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+footer {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 2em 0;
+    text-align: right;
+    max-width: 360px;
+    float: right;
+    font-size: 0.8rem;
+    clear: both;
+}
+
+.primary-accent {
+    color: $PRIMARY_COLOR;
+}
+
+@import 'resume';

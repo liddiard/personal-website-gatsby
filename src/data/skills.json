@@ -1,0 +1,23 @@
+[
+  { "name": "event coordination" },
+  { "name": "web development", "type": "software" },
+  { "name": "GraphQL", "type": "software" },
+  { "name": "Node.js", "type": "software" },
+  { "name": "aviation" },
+  { "name": "JavaScript", "type": "software" },
+  { "name": "React", "type": "software" },
+  { "name": "Python", "type": "software" },
+  { "name": "writing" },
+  { "name": "hardware projects" },
+  { "name": "copy editing" },
+  { "name": "theater tech" },
+  { "name": "sound mixing" },
+  { "name": "video editing" },
+  { "name": "cinematography" },
+  { "name": "compositing" },
+  { "name": "music" },
+  { "name": "scuba diving" },
+  { "name": "UI design", "type": "software" },
+  { "name": "user research", "type": "software" },
+  { "name": "ballroom dance" }
+]
