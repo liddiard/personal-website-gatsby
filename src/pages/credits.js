@@ -6,11 +6,11 @@ import Layout from '../components/layout'
 export default ({ data }) => <Layout page="credits" pageTitle="Credits">
     <h1>Background Image Credits</h1>
     <p>From top to bottom, left to right. All works have been modified by me unless otherwise noted.</p>
-    {data.allCreditsJson.edges.map(credit =>
-        <li key={credit.node.id}>
-          <OutboundLink href={credit.node.link}>{credit.node.name}</OutboundLink> <span className="license">({credit.node.license})</span>
-        </li>
-    )}
+    <ul>{data.allCreditsJson.edges.map(credit =>
+      <li key={credit.node.id}>
+        <OutboundLink href={credit.node.link}>{credit.node.name}</OutboundLink> <span className="license">({credit.node.license})</span>
+      </li>
+    )}</ul>
 </Layout>
 
 export const query = graphql`
