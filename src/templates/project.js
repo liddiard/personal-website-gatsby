@@ -19,7 +19,7 @@ export default ({ data }) => {
     </>
   }
   return (
-    <Layout page="project" pageTitle={metadata.title}>
+    <Layout page="project" pageTitle={metadata.title} metaDescription={metadata.description}>
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>

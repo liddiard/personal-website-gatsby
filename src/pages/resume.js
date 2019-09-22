@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-export default () => <Layout page="resume" pageTitle="Resumé">
+const metaDescription = 'Harrison Liddiard’s resumé, including PayPal, The New York Times, hackNY, UCLA Daily Bruin, and UCLA Athletics.';
+export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={metaDescription}>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" type="text/css"></link>
     <h1 className="page-title">Resumé</h1>
     <header className="header-resume">
