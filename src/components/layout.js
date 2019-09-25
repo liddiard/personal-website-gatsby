@@ -11,7 +11,7 @@ export default ({ page, children, pageTitle, metaDescription }) => (
           {metaDescription ? <meta name="description" content={metaDescription} /> : null}
         </Helmet>
         <Header />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,600|Overpass:400,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Overpass:400,700&display=swap" rel="stylesheet" />
         {children}
         <Footer />
     </main>

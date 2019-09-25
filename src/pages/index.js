@@ -7,7 +7,6 @@ import Layout from '../components/layout'
 const tagCloudStyle = {
   padding: 5,
   fontFamily: 'Muli, sans-serif',
-  fontWeight: 600,
   fontSize: 15,
   width: '100%',
   height: '320px'
@@ -18,7 +17,7 @@ const Skills = ({ data }) => (
     style={tagCloudStyle}>
     {data.allSkillsJson.edges.map(({ node }) => 
       <div key={node.id} style={{
-        color: node.type === 'software' ? 'rgb(0, 40, 180)' : 'initial'
+        fontWeight: node.type === 'software' ? 700 : 400
       }}>{node.name}</div>)}
   </TagCloud>
 );
@@ -51,11 +50,11 @@ const metaDescription = 'Harrison Liddiard is a software engineer in the Califor
 export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescription={metaDescription}>
   <header>
       <h1 className="name">Harrison Liddiard</h1>
-      <p className="tagline">Software engineer at PayPal, event coordination enthusiast, aspiring pilot</p>
+      <p className="tagline">Software engineer at PayPal, event planning enthusiast, aspiring pilot</p>
   </header>
   <p>Hi, I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <Link to="/resume">resume</Link> for other stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
-  <p>Here are some things I enjoy doing. Software-specific skills are in <strong><span className="primary-accent">blue</span></strong>:</p>
+  <p>Here are some things I enjoy doing. Software-specific skills are in <strong>bold</strong>:</p>
   <Skills data={data} />
   <h2>Industries</h2>
   <p>I’m particularly interested in these areas:</p>
