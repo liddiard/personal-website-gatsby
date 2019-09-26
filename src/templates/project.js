@@ -29,7 +29,7 @@ export default ({ data }) => {
           <strong>Skills:</strong> {metadata.skills}<br/>
           {github}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="article-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <aside>
         {metadata.media.map(media => {

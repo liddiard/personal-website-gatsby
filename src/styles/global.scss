@@ -1,6 +1,9 @@
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$primary-color: rgb(0, 40, 180);
+$separator-border: 1px solid rgba(0, 0, 0, 0.15);
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -13,8 +16,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-$PRIMARY_COLOR: rgb(0, 40, 180);
 
 html {
     box-sizing: border-box;
@@ -38,7 +39,7 @@ a {
 }
 
 a:hover {
-    color: $PRIMARY_COLOR;
+    color: $primary-color;
 }
 
 p {
@@ -128,6 +129,11 @@ main.project {
             font-size: 1.5em;
             line-height: 1.2;
         }
+
+        .article-body {
+            padding-bottom: 1em;
+            border: $separator-border;
+        }
     }
 
     aside {
@@ -137,7 +143,7 @@ main.project {
 
     img, video {
         max-width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.15);
+        border: $separator-border;
     }
 
     figure {
@@ -195,7 +201,7 @@ footer {
 }
 
 .primary-accent {
-    color: $PRIMARY_COLOR;
+    color: $primary-color;
 }
 
 @import 'resume';
