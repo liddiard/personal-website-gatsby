@@ -18,34 +18,35 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
     <section className="col left">
         <h2>Work Experience</h2>
         <div className="item">
-            <h3 className="position">Software Engineer <span className="date">2017 – present</span></h3>
+            <h3 className="position">Software Engineer 1 & 2 <span className="date">2017 – present</span></h3>
             <h4 className="company">PayPal</h4>
             <ul>
-                <li>Led frontend development and integration testing of Visa Merchant Category Code collection from PayPal sellers.</li>
-                <li>Developing in Node.js, React, Redux.</li>
-                <li>Mentored intern, interviewed 20+ candidates, planned events for recent college grads, won 1<sup>st</sup> place in internal hackathon.</li>
+                <li>Modernized merchant onboarding stack in React and Node.js.</li>
+                <li>Led programs to improve onboarding verification rate to increase net new actives.</li>
+                <li>Won internal and external hackathons for PayPal, recurited, helped plan PayPal’s annual developer conference.</li>
+                <li>Started a program to help recent college grads meet each other.</li>
             </ul>
         </div>
         <div className="item">
             <h3 className="position">Software Engineering Intern <span className="date">Summer 2016</span></h3>
             <h4 className="company">The New York Times</h4>
             <ul>
-                <li>Wrote a typographic headline balancer with binary search that runs on all NYTimes.com article pages.</li>
                 <li>Increased CMS search speed 10x with Elasticsearch.</li>
                 <li>Search frontend: reduced complexity, redesigned results display, implemented as-you-type feedback for queries.</li>
+                <li>Wrote a binary search typographic headline balancer that runs on all nytimes.com article pages.</li>
             </ul>
         </div>
         <div className="item">
             <h3 className="position">hackNY Fellow, Software Engineering Intern <span className="date">Summer 2015</span></h3>
             <h4 className="company">Wyng</h4>
             <ul>
-                <li>Accepted into hackNY Fellows mentorship program, learned from NYC founders and civic leaders.</li>
-                <li>Created customizable UI components for campaign page builder.</li>
-                <li>Developed full stack using React, Django, Flask, MongoDB.</li>
+                <li>Created customizable React UI components for campaign page builder.</li>
+                <li>Server-side development in Django, Flask, MongoDB.</li>
+                <li>Participated in hackNY Fellows mentorship program learning from NYC founders and civic leaders.</li>
             </ul>
         </div>
         <div className="item">
-            <h3 className="position">Web Developer &amp; Designer <span className="date">2014 – 2017</span></h3>
+            <h3 className="position">Web Developer & Designer <span className="date">2014 – 2017</span></h3>
             <h4 className="company">UCLA Athletics</h4>
             <ul>
                 <li>Worked among several departments to prioritize, design, and create pages for major athletic events.</li>
@@ -66,35 +67,36 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
         <h2>Education</h2>
         <div className="item">
             <h3 className="school">UCLA <span className="date">2017</span></h3>
-            <h4>B.A., Linguistics and Computer Science</h4>
+            B.A., Linguistics and Computer Science
         </div>
         <h2>Technical Skills</h2>
-        <div className="item">
-            <h4>JavaScript</h4>
-            <h4>React</h4>
-            <h4>Node.js</h4>
-            <h4>GraphQL</h4>
-            <h4>HTML / CSS / Sass</h4>
-            <h4>Python</h4>
-            <h4>Flask / Django</h4>
-            <h4>User experience design</h4>
-        </div>
+        <ul className="skills item">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>GraphQL</li>
+            <li>Python</li>
+            <li>Flask, Django</li>
+            <li>HTML, CSS</li>
+            <li>User experience design</li>
+        </ul>
         <h2>Projects</h2>
-        <div className="item">
-            <h4><span className="project-name">MailPDF.online</span> mail a document in under 60 sec. UX design, React, ES6, Node.js.</h4>
-            <h4><span className="project-name">typeemoji.com</span> real-time emoji search with tags by relevance. React and ES6.</h4>
-            <h4><span className="project-name">Stream Editor</span> interactive Unix text manipulation commands online. Bash, Flask, React.</h4>
-            <h4><span className="project-name">kikl.co</span> shorten links with easy-to-remember URLs. Django, PostgreSQL.</h4>
-        </div>
-        <h2>Achievements &amp; Extracurricular</h2>
-        <div className="item">
-            <h4>Eagle Scout with Bronze Palm</h4>
-            <h4>Black belt in Kenpo</h4>
-            <h4>Yamaha Music School graduate</h4>
-            <h4>Student pilot, studying for private pilot</h4>
-            <h4>Experienced event planner</h4>
-            <h4>Videographer & video editor</h4>
-        </div>
+        <ul className="projects item">
+            <li><span className="project-name">Slack Meetups</span>: pair people in a Slack channel for 1:1 meetups</li>
+            <li><span className="project-name">google-sheet-s3</span>: instantly create an API from a spreadsheet</li>
+            <li><span className="project-name">Stream Editor</span>: use Unix text manipulation commands interactively on the web</li>
+            <li><span className="project-name">MailPDF</span>: physically mail a digital document in under 60 secs</li>
+            <li><span className="project-name">kikl.co</span>: shorten links with easy-to-remember URLs</li>
+        </ul>
+        <h2>Other Skills & Achievements</h2>
+        <ul className="skills item">
+            <li>Event planning</li>
+            <li>Videography, audio & video editing</li>
+            <li>Pilot-in-training</li>
+            <li>Eagle Scout with Bronze Palm</li>
+            <li>Yamaha Music School graduate</li>
+            <li>Black belt in Kenpo</li>
+        </ul>
     </section>
     <div className="more">
         <div className="experience">
