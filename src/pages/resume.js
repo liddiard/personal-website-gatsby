@@ -40,7 +40,7 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
             <h3 className="position">hackNY Fellow, Software Engineering Intern <span className="date">Summer 2015</span></h3>
             <h4 className="company">Wyng</h4>
             <ul>
-                <li>Created customizable React UI components for campaign page builder.</li>
+                <li>Created customizable React components for campaign builder.</li>
                 <li>Server-side development in Django, Flask, MongoDB.</li>
                 <li>Participated in hackNY Fellows mentorship program learning from NYC founders and civic leaders.</li>
             </ul>
@@ -58,7 +58,7 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
             <h3 className="position">Managing Editor, Digital <span className="date">2014 – 2015</span></h3>
             <h4 className="company">Daily Bruin</h4>
             <ul>
-                <li>Taught and advised 80+ people in web development, videography, podcasting, and blogging at the university newspaper.</li>
+                <li>Taught and advised 80+ people in web development, videography, and podcasting at the university newspaper.</li>
                 <li>Coordinated interdepartmental breaking news coverage and collaboration on feature stories.</li>
             </ul>
         </div>
@@ -85,7 +85,7 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
             <li><span className="project-name">Slack Meetups</span>: pair people in a Slack channel for 1:1 meetups</li>
             <li><span className="project-name">google-sheet-s3</span>: instantly create an API from a spreadsheet</li>
             <li><span className="project-name">Stream Editor</span>: use Unix text manipulation commands interactively on the web</li>
-            <li><span className="project-name">MailPDF</span>: physically mail a digital document in under 60 secs</li>
+            <li><span className="project-name">MailPDF</span>: physically mail a digital document in under 60 sec</li>
             <li><span className="project-name">kikl.co</span>: shorten links with easy-to-remember URLs</li>
         </ul>
         <h2>Other Skills & Achievements</h2>
