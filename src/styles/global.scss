@@ -1,7 +1,7 @@
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$primary-color: rgb(0, 40, 180);
+$primary-color: rgb(0, 100, 180);
 $separator-border: 1px solid rgba(0, 0, 0, 0.15);
 
 // Use media queries like this:
@@ -39,7 +39,8 @@ a {
 }
 
 a:hover {
-    color: $primary-color;
+    background-color: rgba(lighten($primary-color, 25%), 0.2);
+    text-shadow: none;
 }
 
 p {
