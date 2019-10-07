@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from '../components/link'
 import Layout from '../components/layout'
 
 export default ({ data }) => <Layout page="credits" pageTitle="Credits">

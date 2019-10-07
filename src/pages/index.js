@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { graphql } from 'gatsby'
+import { Link, OutboundLink } from '../components/link'
 import TagCloud from 'react-tag-cloud'
 import Layout from '../components/layout'
 

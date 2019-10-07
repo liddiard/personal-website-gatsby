@@ -1,6 +1,6 @@
 import React from 'react'
-import { graphql, StaticQuery, Link } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { graphql, StaticQuery } from 'gatsby'
+import { Link, OutboundLink } from './link'
 
 export default props => (
   <StaticQuery

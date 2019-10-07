@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { OutboundLink } from '../components/link';
 
 export default ({ data }) => {
   const post = data.markdownRemark,

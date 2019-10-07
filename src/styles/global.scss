@@ -38,10 +38,6 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: $primary-color;
-}
-
 p {
     line-height: 1.45;
 }
@@ -201,6 +197,10 @@ footer {
 
 .primary-accent {
     color: $primary-color;
+}
+
+.no-text-shadow {
+    text-shadow: none;
 }
 
 @import 'resume';
