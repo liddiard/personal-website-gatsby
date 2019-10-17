@@ -8,7 +8,7 @@ github: liddiard/aviation-weather-map
 media:
   - type: image
     filename: ifr_morning.jpg
-    caption: A typical Bay Area fall/winter morning with clouds and fog around the coast
+    caption: A typical Bay Area fall or winter morning with clouds and fog along the coast
   - type: video
     filename: wind_animation.mp4
     caption: Wind animation, from strong gusts at SFO to calmer conditions elsewhere
