@@ -126,7 +126,7 @@ main.project {
         }
 
         h2 {
-            margin-top: 0.5em;
+            margin: 0.5em 0 0;
             font-size: 1.5em;
             line-height: 1.2;
         }
@@ -164,7 +164,7 @@ main.project {
 
     .project-info {
         line-height: 1.45;
-        margin-bottom: 1em;
+        margin-bottom: 1.25em;
     }
 
     @include media-query($on-laptop) {
@@ -192,9 +192,9 @@ main.credits {
 
 footer {
     color: rgba(0, 0, 0, 0.5);
-    margin: 2em 0;
+    margin: 2em 0 4em;
     text-align: right;
-    max-width: 360px;
+    max-width: 370px;
     float: right;
     font-size: 0.8rem;
     clear: both;
