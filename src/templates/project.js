@@ -12,7 +12,7 @@ export default ({ data }) => {
   }
   if (metadata.github) {
     github = <>
-      <strong>GitHub:</strong>{" "}
+      <strong>Code:</strong>{" "}
       <OutboundLink href={`https://github.com/${metadata.github}`} target="_blank" rel="noopener noreferrer">
         {metadata.github}
       </OutboundLink>
