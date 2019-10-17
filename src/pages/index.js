@@ -52,7 +52,7 @@ export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescripti
       <h1 className="name">Harrison Liddiard</h1>
       <p className="tagline">Software engineer at PayPal, event planning enthusiast, aspiring pilot</p>
   </header>
-  <p>Hi, I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <Link to="/resume">resume</Link> for other stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
+  <p>Hi! I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and a <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <Link to="/resume">resume</Link> for other stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
   <p>Here are some things I enjoy doing. Software-specific skills are in <strong>bold</strong>:</p>
   <Skills data={data} />
