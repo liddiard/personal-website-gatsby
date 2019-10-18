@@ -23,7 +23,7 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
             <ul>
                 <li>Modernized merchant onboarding stack in React and Node.js.</li>
                 <li>Led programs to improve onboarding verification rate to increase net new actives.</li>
-                <li>Won internal and external hackathons for PayPal, recurited, helped plan PayPal’s annual developer conference.</li>
+                <li>Won internal and external hackathons for PayPal, recruited, helped plan PayPal’s annual developer conference.</li>
                 <li>Started a program to help recent college grads meet each other.</li>
             </ul>
         </div>
