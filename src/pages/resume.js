@@ -69,33 +69,33 @@ export default () => <Layout page="resume" pageTitle="Resumé" metaDescription={
             <h3 className="school">UCLA <span className="date">2017</span></h3>
             B.A., Linguistics and Computer Science
         </div>
+        <div className="item">
+            <strong>FAA Private Pilot Certificate</strong>
+        </div>
         <h2>Technical Skills</h2>
         <ul className="skills item">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>GraphQL</li>
-            <li>Python</li>
-            <li>Flask, Django</li>
+            <li>JavaScript, React, Node.js</li>
             <li>HTML, CSS</li>
+            <li>REST, GraphQL</li>
+            <li>Python, Django, Flask</li>
             <li>User experience design</li>
         </ul>
         <h2>Projects</h2>
         <ul className="projects item">
             <li><span className="project-name">Slack Meetups</span>: pair people in a Slack channel for 1:1 meetups</li>
+            <li><span className="project-name">Aviation Weather Map</span>: display hazardous winds and visibility (hardware + software)</li>
             <li><span className="project-name">google-sheet-s3</span>: instantly create an API from a spreadsheet</li>
             <li><span className="project-name">Stream Editor</span>: use Unix text manipulation commands interactively on the web</li>
-            <li><span className="project-name">MailPDF</span>: physically mail a digital document in under 60 sec</li>
             <li><span className="project-name">kikl.co</span>: shorten links with easy-to-remember URLs</li>
         </ul>
         <h2>Other Skills & Achievements</h2>
         <ul className="skills item">
-            <li>Event planning</li>
-            <li>Videography, audio & video editing</li>
-            <li>Pilot-in-training</li>
+            <li>Certified scuba diver</li>
+            <li>Black belt in Kenpo</li>
             <li>Eagle Scout with Bronze Palm</li>
             <li>Yamaha Music School graduate</li>
-            <li>Black belt in Kenpo</li>
+            <li>Videography, audio & video editing</li>
+            <li>Event planning</li>
         </ul>
     </section>
     <div className="more">
