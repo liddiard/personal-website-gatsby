@@ -9,16 +9,23 @@ const tagCloudStyle = {
   fontFamily: 'Muli, sans-serif',
   fontSize: 15,
   width: '100%',
-  height: '320px'
+  height: '320px',
+  fontWeight: 'bold'
 }
 
 const Skills = ({ data }) => (
   <TagCloud 
     style={tagCloudStyle}>
     {data.allSkillsJson.edges.map(({ node }) => 
-      <div key={node.id} style={{
-        fontWeight: node.type === 'software' ? 700 : 400
-      }}>{node.name}</div>)}
+      <div
+        key={node.id}
+        style={
+          node.type !== 'software' ?
+            { fontWeight: 'normal', opacity: 0.6 } :
+            { }
+      }>
+        {node.name}
+      </div>)}
   </TagCloud>
 );
 
