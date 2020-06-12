@@ -8,7 +8,7 @@ export default ({ data }) => {
     metadata = post.frontmatter
   let link, github;
   if (metadata.link) {
-    link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="external-link">{metadata.link}</OutboundLink>;
+    link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
   }
   if (metadata.github) {
     github = <>
@@ -23,7 +23,7 @@ export default ({ data }) => {
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
-        {link}<br/>
+        {link}
         <div className="project-info">
           <strong>Involvement:</strong> {metadata.involvement}<br/>
           <strong>Skills:</strong> {metadata.skills}<br/>

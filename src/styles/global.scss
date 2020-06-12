@@ -126,12 +126,13 @@ main.project {
         }
 
         h2 {
-            margin: 0.5em 0 0;
+            margin: 0.5em 0;
             font-size: 1.5em;
             line-height: 1.2;
         }
 
         .article-body {
+            margin: 0.5em 0;
             border-bottom: $separator-border;
         }
     }
@@ -155,16 +156,16 @@ main.project {
         font-weight: 600;
     }
 
-    .external-link {
-        font-size: 1.2em;
+    .project-link {
+        display: block;
         display: inline-block;
-        margin-bottom: 1em;
+        margin: 0.5em 0;
         font-weight: 600;
     }
 
     .project-info {
         line-height: 1.45;
-        margin-bottom: 1.25em;
+        margin: 0.5em 0;
     }
 
     @include media-query($on-laptop) {
