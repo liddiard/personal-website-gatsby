@@ -10,7 +10,7 @@ media:
     filename: 1.png
   - type: image
     filename: 2.png
-    caption: Using sed to remove the citation notes from a Wikipedia article. Removals shown in red.
+    caption: Using sed to remove the citation notes from a Wikipedia article (removals shown in red)
   - type: image
     filename: 3.png
     caption: Full Unicode support. 很好。
@@ -18,7 +18,7 @@ media:
     filename: 4.png
   - type: image
     filename: 5.png
-    caption: Examine the effect of chaining multiple operations together at every step.
+    caption: Examine the effect of chaining multiple operations together at every step
 type: software
 ---
 

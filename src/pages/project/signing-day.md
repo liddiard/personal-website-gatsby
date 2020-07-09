@@ -15,10 +15,10 @@ media:
     caption: Card detail.
   - type: video
     filename: card_flip.mp4
-    caption: "UI affordances for card flip on hover: subtle card rotation and drop shadow, changed cursor, tooltip."
+    caption: "UI affordances for card flip on hover: subtle card rotation and drop shadow, changed cursor, tooltip"
   - type: image
     filename: admin_top.png
-    caption: Admin interface for adding and managing signees.
+    caption: Admin interface for adding and managing signees
   - type: image
     filename: admin_bottom.png
 type: software

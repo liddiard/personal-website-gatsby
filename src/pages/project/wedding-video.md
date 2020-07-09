@@ -7,7 +7,7 @@ skills: photography, videography, color grading, video editing
 media:
   - type: video
     filename: 1.mp4
-    caption: Select clips from the wedding photo shoot video. Stills below.
+    caption: Select clips from the wedding photo shoot video, stills below
   - type: image
     filename: 1.png
   - type: image

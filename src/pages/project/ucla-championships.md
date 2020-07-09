@@ -8,7 +8,7 @@ skills: React, ES6, Sass, UI design
 media:
   - type: video
     filename: 1.mp4
-    caption: "Navigation demo: filtering by year, by sport, or by both."
+    caption: "Navigation demo: filtering by year, by sport, or both"
 type: software
 ---
 

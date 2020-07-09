@@ -19,7 +19,10 @@ media:
     caption: "The headline balancer in action. Before: Text is unevenly distributed among multiple lines. After: Text is evenly distributed with each line having a similar length. (Image from The New York Times)"
   - type: image
     filename: 6.png
-    caption: "A balanced headline on a New York Times article. (Image from The New York Times)"
+    caption: Headline balancer in use on an article (Image from The New York Times)
+  - type: image
+    filename: 7.png
+    caption: Headline balancer in use on the July 9, 2020 front page
 type: software
 ---
 

@@ -8,7 +8,7 @@ skills: Node.js, Express, React, ES6, Sass, UX design
 media:
   - type: video
     filename: 1.mp4
-    caption: Mailing a PDF document in under 60 seconds (despite my slow typing).
+    caption: Mailing a PDF document in under 60 seconds (despite my slow typing)
 type: software
 ---
 
