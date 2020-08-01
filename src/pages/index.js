@@ -14,25 +14,25 @@ const tagCloudStyle = {
 }
 
 const Skills = ({ data }) => (
-  <TagCloud 
+  <TagCloud
     style={tagCloudStyle}>
-    {data.allSkillsJson.edges.map(({ node }) => 
+    {data.allSkillsJson.edges.map(({ node }) =>
       <div
         key={node.id}
         style={
           node.type !== 'software' ?
             { fontWeight: 'normal', opacity: 0.6 } :
-            { }
-      }>
+            {}
+        }>
         {node.name}
       </div>)}
   </TagCloud>
 );
 
 const Interests = ({ data }) => (
-  <TagCloud 
-  style={{ ...tagCloudStyle, height: '100px' }}>
-  {data.allInterestsJson.edges.map(({ node }) => 
+  <TagCloud
+    style={{ ...tagCloudStyle, height: '100px' }}>
+    {data.allInterestsJson.edges.map(({ node }) =>
       <div key={node.id}>{node.name}</div>)}
   </TagCloud>
 );
@@ -40,24 +40,24 @@ const Interests = ({ data }) => (
 const renderProjects = (edges) => (
   <ul className="projects">
     {edges
-    .sort((a, b) => b.node.frontmatter.order - a.node.frontmatter.order)
-    .map(({ node }) => (
-      <li key={node.id}>
-        <Link
-          to={node.fields.slug}>
-          {node.frontmatter.title}
-        </Link>
+      .sort((a, b) => b.node.frontmatter.order - a.node.frontmatter.order)
+      .map(({ node }) => (
+        <li key={node.id}>
+          <Link
+            to={node.fields.slug}>
+            {node.frontmatter.title}
+          </Link>
         : {node.frontmatter.description}
-      </li>
-    ))}
+        </li>
+      ))}
   </ul>
 )
 
 const metaDescription = 'Harrison Liddiard is a software engineer in the California San Francisco Bay Area working at PayPal. See his projects and resume.';
 export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescription={metaDescription}>
   <header>
-      <h1 className="name">Harrison Liddiard</h1>
-      <p className="tagline">Software engineer at PayPal, event planning enthusiast, aspiring pilot</p>
+    <h1 className="name">Harrison Liddiard</h1>
+    <p className="tagline">Software engineer at PayPal, event planning enthusiast, aspiring pilot</p>
   </header>
   <p>Hi! I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and a <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <Link to="/resume">resume</Link> for other stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
