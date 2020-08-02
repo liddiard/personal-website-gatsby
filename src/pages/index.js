@@ -6,11 +6,10 @@ import Layout from '../components/layout'
 
 const tagCloudStyle = {
   padding: 5,
-  fontFamily: 'Muli, sans-serif',
+  fontFamily: 'Lato, sans-serif',
   fontSize: 15,
   width: '100%',
-  height: '320px',
-  fontWeight: 'bold'
+  height: '240px'
 }
 
 const Skills = ({ data }) => (
@@ -20,8 +19,8 @@ const Skills = ({ data }) => (
       <div
         key={node.id}
         style={
-          node.type !== 'software' ?
-            { fontWeight: 'normal', opacity: 0.6 } :
+          node.type === 'software' ?
+            { color: '#6653ff' } : 
             {}
         }>
         {node.name}
@@ -31,7 +30,7 @@ const Skills = ({ data }) => (
 
 const Interests = ({ data }) => (
   <TagCloud
-    style={{ ...tagCloudStyle, height: '100px' }}>
+    style={{ ...tagCloudStyle, height: '90px' }}>
     {data.allInterestsJson.edges.map(({ node }) =>
       <div key={node.id}>{node.name}</div>)}
   </TagCloud>
@@ -57,17 +56,17 @@ const metaDescription = 'Harrison Liddiard is a software engineer in the Califor
 export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescription={metaDescription}>
   <header>
     <h1 className="name">Harrison Liddiard</h1>
-    <p className="tagline">Software engineer at PayPal, event planning enthusiast, aspiring pilot</p>
+    <p className="tagline">Software engineer, event planning enthusiast, aspiring pilot</p>
   </header>
-  <p>Hi! I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and a <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <Link to="/resume">resume</Link> for other stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
+  <p className="lede">Hi! I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and a <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. You can check out my <a href="#projects">projects</a> below and my <Link to="/resume">resume</Link> for some stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
-  <p>Here are some things I enjoy doing. Software-specific skills are in <strong>bold</strong>:</p>
+  <p>Here are some things I enjoy doing, to varying degrees of competency. Software-specific skills are in <span className="primary-accent"><strong>purple</strong></span>:</p>
   <Skills data={data} />
   <h2>Industries</h2>
-  <p>I’m particularly interested in these areas:</p>
+  <p>I’m particularly interested in work in these areas:</p>
   <Interests data={data} />
-  <h2>Projects</h2>
-  Some things I’ve made:
+  <h2 id="projects">Projects</h2>
+  Some things I’ve made (most recent first):
   <h3>Software</h3>
   {renderProjects(data.allMarkdownRemark.edges
     .filter(({ node }) => node.frontmatter.type === 'software'))}

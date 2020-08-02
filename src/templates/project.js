@@ -33,20 +33,21 @@ export default ({ data }) => {
       </article>
       <aside>
         {metadata.media.map(media => {
-          const mediaPath = post.fields.slug + media.filename
-          switch (media.type) {
+          const { filename, type, caption } = media
+          const mediaPath = post.fields.slug + filename
+          switch (type) {
             case 'image':
-              return <figure>
+              return <figure key={filename}>
                 <img src={mediaPath} />
-                  <figcaption>{media.caption}</figcaption>
+                  <figcaption>{caption}</figcaption>
               </figure>
             case 'video':
-              return <figure>
+              return <figure key={filename}>
                 <video src={mediaPath} controls autoPlay muted loop playsInline />
-                  <figcaption>{media.caption}</figcaption>
+                  <figcaption>{caption}</figcaption>
               </figure>
             default:
-              return console.error('unknown media type:', media.type);
+              return console.error('unknown media type:', type);
           }})}
       </aside>
     </Layout>
