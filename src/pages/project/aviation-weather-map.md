@@ -1,6 +1,6 @@
 ---
 title: Aviation Weather Map
-description: Visualize winds and flight conditions with hardware + software
+description: Visualize flight conditions with hardware + software
 order: 25
 involvement: contributor / creator
 skills: Python, animation, hardware
