@@ -79,8 +79,11 @@ code {
     font-family: $mono;
 }
 
-ul {
+ul, ol {
     line-height: 1.4;
+}
+
+ul {
     list-style-type: square;
 }
 

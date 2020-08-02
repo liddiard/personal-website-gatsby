@@ -27,18 +27,18 @@ When software developers need more powerful text manipulation capabilities than 
 
 I created Stream Editor as an interactive web interface for writing and debugging commands using these text transformation utilities. It aims to:
 
-<!-- Gastsby's markdown transformer doesn't render this list correctly: https://github.com/gatsbyjs/gatsby/issues/10870 -->
+<!-- Gatsby's markdown transformer doesn't render this list correctly: https://github.com/gatsbyjs/gatsby/issues/10870 -->
 <ul>
-  <li>close the feedback loop traditionally associated with using these commands by providing as-you-type output</li>
+  <li>close the feedback loop typically associated with using these commands by providing as-you-type output</li>
   <li>increase visibility into what each command is doing by:</li>
   <ul>
+    <li>providing a green/red diff highlights for added/removed text</li>
     <li>displaying the intermediate output between each command when you have multiple chained together</li>
-    <li>providing an optional green/red diff highlight for added/removed text</li>
   </ul>
   <li>provide an approachable interface to command-line text manipulation for both beginners and experienced developers that facilitates quick and easy tinkering</li>
 </ul>
 
-It has some other nice features like the ability to upload a file as input; to export a string of commands as a Bash script; to share commands you write with a unique URL; and to customize aspects of the UI like pane widths, light/dark theme, and font size.
+It has some other useful features like the ability to upload a file as input; to export a string of commands as a Bash script; to share commands you write with a unique URL; and to customize aspects of the UI like pane widths, light/dark theme, and font size.
 
 It's written using a lightweight Flask server on the backend and a modern (as of 2020) React UI on the frontend that fully uses function-based components with [React Hooks](https://reactjs.org/docs/hooks-intro.html).
 
@@ -47,8 +47,8 @@ Creating and deploying Stream Editor came with a few unique challenges. One was 
 1. Only recalculate the diff when absolutely necessary and cache its output with the [React `useMemo` hook](https://reactjs.org/docs/hooks-reference.html#usememo).
 2. Move the expensive part of the operation into a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) so it would no longer block the UI thread.
 
-These changes decreased resource useage eliminated the lag in the user interface.
+These changes decreased resource usage and eliminated the lag in the user interface.
 
 The other huge challenge with this project was security. At its core, Stream Editor is a web interface that lets random strangers on the internet run commands on your server. That's generally considered to be a bad idea. 
 
-To neutralize this potential security threat, I configured all commands to be run by an extremely restricted user inside a [chroot jail](https://en.wikipedia.org/wiki/Chroot), which limits a user's access at the operating system level to a walled-off subdirectory. These measures, along with the precaution of not storing any sensitve information on the web server, made me reasonably confident in exposing it to the internet.
+To neutralize this potential security threat, I configured all commands to be run by an extremely restricted user inside a [chroot jail](https://en.wikipedia.org/wiki/Chroot), which limits a user's access at the OS level to a walled-off subdirectory. These measures, along with the precaution of not storing any sensitive information on the web server, made me reasonably confident in exposing it to the internet.
