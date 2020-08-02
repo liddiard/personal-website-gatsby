@@ -9,7 +9,7 @@ const tagCloudStyle = {
   fontFamily: 'Lato, sans-serif',
   fontSize: 15,
   width: '100%',
-  height: '240px'
+  height: '200px'
 }
 
 const Skills = ({ data }) => (
@@ -30,7 +30,7 @@ const Skills = ({ data }) => (
 
 const Interests = ({ data }) => (
   <TagCloud
-    style={{ ...tagCloudStyle, height: '90px' }}>
+    style={{ ...tagCloudStyle, height: '80px' }}>
     {data.allInterestsJson.edges.map(({ node }) =>
       <div key={node.id}>{node.name}</div>)}
   </TagCloud>
