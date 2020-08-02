@@ -24,15 +24,13 @@ export default props => (
 
 const Header = ({ data }) => <nav>
   <ul>
-    {data.allNavLinksJson.edges.map(link => {
-      const { node } = link
-      let linkElement
-      if (node.external) {
-        linkElement = <OutboundLink href={node.url} target="_blank" rel="noopener noreferrer">{node.text}</OutboundLink>
-      } else {
-        linkElement = <Link to={node.url}>{node.text}</Link>
-      }
-      return <li key={node.id}>{linkElement}</li>
-    })}
+    {data.allNavLinksJson.edges.map(({ node }) =>
+      <li key={node.id}>
+        {node.external ?
+          <OutboundLink href={node.url}>{node.text}</OutboundLink> :
+          <Link to={node.url}>{node.text}</Link>
+        }
+      </li>
+    )}
   </ul>
 </nav>
