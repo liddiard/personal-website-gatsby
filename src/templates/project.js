@@ -38,7 +38,7 @@ export default ({ data }) => {
           switch (type) {
             case 'image':
               return <figure key={filename}>
-                <img src={mediaPath} />
+                <img src={mediaPath} alt={caption} />
                   <figcaption>{caption}</figcaption>
               </figure>
             case 'video':
