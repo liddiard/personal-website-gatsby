@@ -42,7 +42,7 @@ It has some other useful features like the ability to upload a file as input; to
 
 It’s written using a lightweight Flask server on the backend and a modern (as of 2020) React UI on the frontend that fully uses function-based components with [React Hooks](https://reactjs.org/docs/hooks-intro.html).
 
-Creating and deploying Stream Editor came with a few unique challenges. One was the performance of the text diff algorithm that highlights added and removed text. With very large inputs and diffs, it could take a few seconds to generate the diff. This would block the UI, causing it to become momentarily unresponsive. My fix for this issue was twofold:
+Creating and deploying Stream Editor came with a few interesting challenges. One was the performance of the text diff algorithm that highlights added and removed text. With very large inputs and diffs, it could take a few seconds to generate the diff. This would block the UI, causing it to become momentarily unresponsive. My fix for this issue was twofold:
 
 1. Only recalculate the diff when absolutely necessary and cache its output with the [React `useMemo` hook](https://reactjs.org/docs/hooks-reference.html#usememo).
 2. Move the expensive part of the operation into a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) so it would no longer block the UI thread.
@@ -51,4 +51,4 @@ These changes decreased resource usage and eliminated the lag in the user interf
 
 The other huge challenge with this project was security. At its core, Stream Editor is a web interface that lets random strangers on the internet run commands on your server. That’s generally considered to be a bad idea. 
 
-To neutralize this potential security threat, I configured all commands to be run by an extremely restricted user inside a [chroot jail](https://en.wikipedia.org/wiki/Chroot), which limits a user’s access at the OS level to a walled-off subdirectory. These measures, along with the precaution of not storing any sensitive information on the web server, made me reasonably confident in exposing it to the internet.
+To curtail this potential security threat, I configured all commands to be run by an extremely restricted user inside a [chroot jail](https://en.wikipedia.org/wiki/Chroot), which limits a user’s access at the OS level to a walled-off subdirectory. These measures, along with the precaution of not storing any sensitive information on the web server, made me reasonably confident in exposing it to the internet.
