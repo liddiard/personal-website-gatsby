@@ -8,7 +8,7 @@ skills: photography, cinematography, camera operation, special effects
 media:
   - type: video
     filename: 1.mp4
-    caption: "Blueshifted, the short film (warning: strong language). Stills below."
+    caption: "Blueshifted, the short film (note: contains explicit language). Stills below."
   - type: image
     filename: 1.png
   - type: image

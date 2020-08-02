@@ -32,7 +32,7 @@ I created Stream Editor as an interactive web interface for writing and debuggin
   <li>close the feedback loop typically associated with using these commands by providing as-you-type output</li>
   <li>increase visibility into what each command is doing by:</li>
   <ul>
-    <li>providing a green/red diff highlights for added/removed text</li>
+    <li>higlighting diffs in green/red for added/removed text</li>
     <li>displaying the intermediate output between each command when you have multiple chained together</li>
   </ul>
   <li>provide an approachable interface to command-line text manipulation for both beginners and experienced developers that facilitates quick and easy tinkering</li>
