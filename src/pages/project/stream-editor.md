@@ -18,7 +18,7 @@ media:
     caption: Using Stream Editor to analyze its own logs by chaining multiple commands together
   - type: image
     filename: chain.png
-    caption: Screenshot of the end commands from the above video
+    caption: The full chain of commands from the end of the above video
 
 type: software
 ---
