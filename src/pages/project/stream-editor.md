@@ -1,37 +1,54 @@
 ---
 title: Stream Editor
-description: Interactive online text processing with Unix utilities
-order: 12
+description: Interactive UI for command-line text manipulation utilities
+order: 40
+link: https://streameditor.io
 involvement: creator
-skills: React, Flask, Bash, Sass, web development
+skills: React, Flask, Python, Unix, web development
 github: liddiard/stream-editor
 media:
   - type: image
-    filename: 1.png
+    filename: initial.png
+    caption: Stream Editor default view (dark theme)
   - type: image
-    filename: 2.png
-    caption: Using sed to remove the citation notes from a Wikipedia article (removals shown in red)
+    filename: unicode.png
+    caption: Light theme, showcasing full Unicode support
+  - type: video
+    filename: log_analysis.mp4
+    caption: Using Stream Editor to analyze its own logs by chaining multiple commands together
   - type: image
-    filename: 3.png
-    caption: Full Unicode support. 很好。
-  - type: image
-    filename: 4.png
-  - type: image
-    filename: 5.png
-    caption: Examine the effect of chaining multiple operations together at every step
+    filename: chain.png
+    caption: Screenshot of the end commands from the above video
+
 type: software
 ---
 
-When you need more powerful text manipulation than your text editor's find and replace provides, the go-to approach is tried-and-tested Unix utilities like sed, awk, grep. 
+When software developers need more powerful text manipulation capabilities than a simple find-and-replace, go-to tools are Unix utilities like `sed`, `grep`, and `awk`. They're incredibly powerful, but they can be intimidating for newcomers and a bit unwieldy even in the hands of seasoned developers. This is especially true for more complex use cases that involve chaining multiple commands together.
 
-These utilities are heavy on features, documentation, and examples, but they're a pain to use quickly. If your input is of any substantial length, you need to create a shell script and a file to hold your input text then read it in. Debugging or otherwise "testing things out" is also full of time-consuming overhead that usually involves a lot of echo statements and console scrolling.
+I created Stream Editor as an interactive web interface for writing and debugging commands using these text transformation utilities. It aims to:
 
-Stream Editor is a web application that provides access to all the features of powerful Unix text manipulation utilities without all the setup and debugging pain of console work. Simply paste your input text in the left half of the screen, choose your utility, enter your arguments, and watch the right half of the screen update in real time with a visual diff.
+<!-- Gastsby's markdown transformer doesn't render this list correctly: https://github.com/gatsbyjs/gatsby/issues/10870 -->
+<ul>
+  <li>close the feedback loop traditionally associated with using these commands by providing as-you-type output</li>
+  <li>increase visibility into what each command is doing by:</li>
+  <ul>
+    <li>displaying the intermediate output between each command when you have multiple chained together</li>
+    <li>providing an optional green/red diff highlight for added/removed text</li>
+  </ul>
+  <li>provide an approachable interface to command-line text manipulation for both beginners and experienced developers that facilitates quick and easy tinkering</li>
+</ul>
 
-Chaining commands is incredibly easy with Stream Editor's horizontal flow model, and you can inspect the effect of every operation at each step of the way.
+It has some other nice features like the ability to upload a file as input; to export a string of commands as a Bash script; to share commands you write with a unique URL; and to customize aspects of the UI like pane widths, light/dark theme, and font size.
 
-Came up with a command you want to use later? Stream Editor generates a unique URL for each set of operations that you can bookmark, document, or share with others.
+It's written using a lightweight Flask server on the backend and a modern (as of 2020) React UI on the frontend that fully uses function-based components with [React Hooks](https://reactjs.org/docs/hooks-intro.html).
 
-Stream Editor has full unicode support and comes with other handy features like synced scrolling across panes and a quick command reference.
+Creating and deploying Stream Editor came with a few unique challenges. One was the performance of the text diff algorithm that highlights added and removed text. With very large inputs and diffs, it could take a few seconds to generate the diff. This would block the UI, causing it to become momentarily unresponsive. My fix for this issue was twofold:
 
-*Note: Stream Editor is not deployed publicly yet because I am working on configuring a jailed environment that ensures server security by preventing arbitrary code execution and restricting file access.*
+1. Only recalculate the diff when absolutely necessary and cache its output with the [React `useMemo` hook](https://reactjs.org/docs/hooks-reference.html#usememo).
+2. Move the expensive part of the operation into a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) so it would no longer block the UI thread.
+
+These changes decreased resource useage eliminated the lag in the user interface.
+
+The other huge challenge with this project was security. At its core, Stream Editor is a web interface that lets random strangers on the internet run commands on your server. That's generally considered to be a bad idea. 
+
+To neutralize this potential security threat, I configured all commands to be run by an extremely restricted user inside a [chroot jail](https://en.wikipedia.org/wiki/Chroot), which limits a user's access at the operating system level to a walled-off subdirectory. These measures, along with the precaution of not storing any sensitve information on the web server, made me reasonably confident in exposing it to the internet.
