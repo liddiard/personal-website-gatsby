@@ -70,7 +70,7 @@ export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescripti
   <h3>Software</h3>
   {renderProjects(data.allMarkdownRemark.edges
     .filter(({ node }) => node.frontmatter.type === 'software'))}
-  <h3>Non-software</h3>
+  <h3>Video</h3>
   {renderProjects(data.allMarkdownRemark.edges
     .filter(({ node }) => node.frontmatter.type !== 'software'))}
 </Layout>
