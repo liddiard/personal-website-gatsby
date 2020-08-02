@@ -1,6 +1,6 @@
 ---
 title: UCLA Bruins championships showcase
-description: "Explore the Bruins’ history as the #1 winner of NCAA championships"
+description: "Explore the Bruins’ history of wins"
 order: 13
 link: http://uclabruins.com/championships
 involvement: creator

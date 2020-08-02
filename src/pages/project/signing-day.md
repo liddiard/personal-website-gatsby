@@ -1,6 +1,6 @@
 ---
 title: UCLA Bruins Signing Day
-description: Official live updates for the Bruins’ Football Signing Day
+description: Live updates for the Bruins’ Football Signing Day
 order: 14
 involvement: creator
 skills: Django, PostgreSQL, Memcached, React, Sass
