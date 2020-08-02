@@ -1,0 +1,73 @@
+@import "globals";
+
+main.project {
+  max-width: 1280px;
+
+  article {
+    float: left;
+    width: 33%;
+
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0.5em 0;
+      font-size: 1.5em;
+      line-height: 1.2;
+    }
+
+    .article-body {
+      margin: 0.5em 0 2em; // bottom margin for mobile
+      border-bottom: $separator-border;
+    }
+
+    li {
+      margin: 0.25em 0;
+    }
+  }
+
+  aside {
+    float: right;
+    width: 67%;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    border: $separator-border;
+  }
+
+  figure {
+    margin-right: 0;
+  }
+
+  figcaption {
+    margin: 0.25em 0 1.5em;
+    font-weight: 600;
+  }
+
+  .project-link {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    font-weight: 600;
+  }
+
+  .project-info {
+    line-height: 1.45;
+    margin: 0.5em 0;
+  }
+
+  @include media-query($on-laptop) {
+    article,
+    aside {
+      width: 100%;
+      float: none;
+    }
+
+    figure {
+      margin: 0;
+    }
+  }
+}
