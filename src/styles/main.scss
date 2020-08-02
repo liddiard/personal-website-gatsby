@@ -143,6 +143,10 @@ footer {
   color: $primary-color;
 }
 
+.giphy-embed { // used on the 404 page
+  border: $separator-border;
+}
+
 @import "credits";
 @import "project";
 @import "resume";
