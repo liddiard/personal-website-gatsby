@@ -60,7 +60,7 @@ export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescripti
   </header>
   <p className="lede">Hi! I’m Harrison, a software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and a <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. You can check out my <a href="#projects">projects</a> below and my <Link to="/resume">resume</Link> for some stuff I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
-  <p>Here are some things I enjoy doing, to varying degrees of competency. Software-specific skills are in <span className="primary-accent"><strong>purple</strong></span>:</p>
+  <p>Here are some things I enjoy doing, to varying levels of competency. Software-specific skills are in <span className="primary-accent"><strong>purple</strong></span>:</p>
   <Skills data={data} />
   <h2>Industries</h2>
   <p>I’m particularly interested in work in these areas:</p>
