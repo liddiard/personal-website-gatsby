@@ -21,7 +21,7 @@ The use cases I identified, in order of priority, are:
 4. Locating information about a specific championship
 3. Browsing championships in a specific year
 
-In order to accommodate all of these use cases cleanly, I came up with a two-part radio button navigation that offers a year filter and a sport filter. Both filters are initially set to "All Years" and "All Sports," respectively, so that all championships are displayed by default.
+In order to accommodate all of these use cases cleanly, I came up with a two-part radio button navigation that offers a year filter and a sport filter. Both filters are initially set to “All Years” and “All Sports,” respectively, so that all championships are displayed by default.
 
 Clicking a year filters the list and highlights all sports in which UCLA won a championship that year, and vice versa when clicking a sport. Take a look at the accompanying video for a better visual explanation of how the navigation makes it easy to browse either by year or by sport, or to quickly locate a specific championship.
 

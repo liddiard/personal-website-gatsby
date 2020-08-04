@@ -26,11 +26,11 @@ media:
 type: software
 ---
 
-I worked as a developer on the CMS team in my summer 2016 internship at The New York Times. I reimplemented the CMS's main dashboard search, a feature used hundreds of times per day by journalists to find specific pieces of content like articles, images, and videos.
+I worked as a developer on the CMS team in my summer 2016 internship at The New York Times. I reimplemented the CMS’s main dashboard search, a feature used hundreds of times per day by journalists to find specific pieces of content like articles, images, and videos.
 
 The existing search was slow and poorly formatted. Returning results could take several seconds, and the results were not very accurate.
 
-The slowness was caused by a complex SQL query that joined several tables to search and produce a result. Our solution was to index searchable parts of the database in a denormalized document data structure with Elasticsearch and keep it up to date with the database by hooking into The Times's internal ActiveMQ-brokered event system.
+The slowness was caused by a complex SQL query that joined several tables to search and produce a result. Our solution was to index searchable parts of the database in a denormalized document data structure with Elasticsearch and keep it up to date with the database by hooking into The Times’s internal ActiveMQ-brokered event system.
 
 The new implementation sped up search performance 10x.
 
@@ -38,7 +38,7 @@ In addition to this backend work I implemented with another intern, I designed a
 
 The old search form required a user to fill out several inputs, explicitly filtering by multiple fields to get relevant results. Results were displayed in a table that was difficult to scan quickly because information to identify an asset was spread across the screen without visual hierarchy.
 
-I formatted the new search results in a familiar Google-style layout which emphasized a matching item's slug – a unique, human-readable identifier that a journalist would quickly recognize. I got rid of the several form elements in favor of a single search box. 
+I formatted the new search results in a familiar Google-style layout which emphasized a matching item’s slug – a unique, human-readable identifier that a journalist would quickly recognize. I got rid of the several form elements in favor of a single search box. 
 
 The UI displays example searches that demonstrate how to narrow a search easily by adding e.g. a relevant section or author to the query. Search results update as one types for instant feedback.
 

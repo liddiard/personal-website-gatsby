@@ -25,4 +25,4 @@ In under a minute, your site is set up for detailed logging and customizable not
 
 The service works by sending an Ajax request to a monitor404 server whenever a user clicks on a link. The server adds the link to an asynchronous queue using [Celery](http://www.celeryproject.org/). The queue quickly processes links by checking a cache. If the link is not in cache, it issues a HEAD request to the URL and checks the status code. If the status code is 404, it logs the error and sends a notification email.
 
-monitor404 works over SSL and accepts payments for premium plans with [Stripe](https://stripe.com/). monitor404's implementation allows it to identify broken links to external sites, a huge asset to any website that frequently uses offsite links, like news sites and wikis.
+monitor404 works over SSL and accepts payments for premium plans with [Stripe](https://stripe.com/). monitor404’s implementation allows it to identify broken links to external sites, a huge asset to any website that frequently uses offsite links, like news sites and wikis.

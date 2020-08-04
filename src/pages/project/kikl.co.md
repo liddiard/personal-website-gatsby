@@ -18,7 +18,7 @@ media:
 type: software
 ---
 
-Sometimes you just need to get a link from one place to another, and the most convenient method of transport is your memory. Links like `http://bit.ly/1loNbfX/` are short, but they're very impractical to remember.
+Sometimes you just need to get a link from one place to another, and the most convenient method of transport is your memory. Links like `http://bit.ly/1loNbfX/` are short, but they’re very impractical to remember.
 
 Instead of random number/letter links, kikl.co gives you fun and easy-to-remember URLs like `kikl.co/fat-walrus`, perfect for remembering, sharing by word of mouth, and typing easily.
 

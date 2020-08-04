@@ -20,7 +20,7 @@ type: software
 
 After trying tens of todo list apps, I finally landed on [Workflowy](https://workflowy.com). It has two standout features: its UI is incredibly simple to use, and it lets you organize your tasks in a hierarchy of your own design.
 
-I wanted to bring a similar experience to note taking. Some note-taking apps like OneNote give you a hierarchy, but it's an imposed one of notebooks, sections, and pages, which doesn't make sense as an organization paradigm for all use cases.
+I wanted to bring a similar experience to note taking. Some note-taking apps like OneNote give you a hierarchy, but it’s an imposed one of notebooks, sections, and pages, which doesn’t make sense as an organization paradigm for all use cases.
 
 Sepalnote does away with these arbitrary distinctions in favor of nestable notes. Notes can be of any length – one word or a paragraph – and they can be nested infinitely. Notes are navigated with a two-pane setup and full search functionality. 
 

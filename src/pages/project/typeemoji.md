@@ -18,11 +18,11 @@ media:
 type: software
 ---
 
-Unicode emoji are all the rage these days – they're great for adding expression and flair to an online conversation, and they're supported almost everywhere. The hardest part of using them is finding the right one.
+Unicode emoji are all the rage these days – they’re great for adding expression and flair to an online conversation, and they’re supported almost everywhere. The hardest part of using them is finding the right one.
 
-Plenty of websites exist for searching emoji, but they're most click farms that require annoying jumps between pages to get to the character you want to use. Software like macOS and Slack have forms of emoji searching built in, but they're reliant on searching only the text in the emoji description.
+Plenty of websites exist for searching emoji, but they’re most click farms that require annoying jumps between pages to get to the character you want to use. Software like macOS and Slack have forms of emoji searching built in, but they’re reliant on searching only the text in the emoji description.
 
-I created TypeEmoji to make it easier to find the emoji you want quickly. It's a responsive, single-page React application with real-time emoji search. It searches not only on the official character descriptions, but also on additional annotation ("tag") keywords provided by the Unicode Consortium. It orders search results by relevance.
+I created TypeEmoji to make it easier to find the emoji you want quickly. It’s a responsive, single-page React application with real-time emoji search. It searches not only on the official character descriptions, but also on additional annotation (“tag”) keywords provided by the Unicode Consortium. It orders search results by relevance.
 
 I obtained the emoji data by parsing the [official emoji page from unicode.org](http://unicode.org/emoji/charts/full-emoji-list.html) with [cheerio](https://github.com/cheeriojs/cheerio) on Node.js.
 

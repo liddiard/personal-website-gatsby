@@ -16,11 +16,11 @@ media:
 type: software
 ---
 
-Location is a huge consideration when you're moving somewhere new. One of the most important aspects of location is driving times to surrounding areas – work, school, the bank, the grocery store – dozens of places you may visit weekly.
+Location is a huge consideration when you’re moving somewhere new. One of the most important aspects of location is driving times to surrounding areas – work, school, the bank, the grocery store – dozens of places you may visit weekly.
 
-Unfortunately, not many good options exist to quickly visualize how much time you can expect to spend driving to surrounding areas in a single map without querying each destination individually. The best I could find is [Trulia's commute map](http://on.trulia.com/2x1IVLW), but it's awfully optimistic because it doesn't account for traffic – a significant factor for driving times in most cities.
+Unfortunately, not many good options exist to quickly visualize how much time you can expect to spend driving to surrounding areas in a single map without querying each destination individually. The best I could find is [Trulia’s commute map](http://on.trulia.com/2x1IVLW), but it’s awfully optimistic because it doesn’t account for traffic – a significant factor for driving times in most cities.
 
-Enter Driving Time Heatmap. Leveraging Google Maps' comprehensive traffic data, which is queryable in bulk via the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix), Driving Time Heatmap can generate accurate driving time estimations by accounting for traffic conditions at specific days and times.
+Enter Driving Time Heatmap. Leveraging Google Maps’ comprehensive traffic data, which is queryable in bulk via the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix), Driving Time Heatmap can generate accurate driving time estimations by accounting for traffic conditions at specific days and times.
 
 To generate the heatmap, the application first renders a base map layer using the [Static Maps API](https://developers.google.com/maps/documentation/static-maps/). Then, it uses [geodesy](https://www.npmjs.com/package/geodesy) to create an array of more than 100 points surrounding your origin address in concentric circles. It queries the Distance Matrix API for driving time estimates from your origin point to these surrounding points at your selected time. 
 
