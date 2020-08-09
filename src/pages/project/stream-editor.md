@@ -27,7 +27,7 @@ When software developers need more powerful text manipulation capabilities than 
 
 I created Stream Editor as an interactive web interface for writing and debugging commands using these text transformation utilities. It aims to:
 
-<!-- Gatsby’s markdown transformer doesn’t render this list correctly: https://github.com/gatsbyjs/gatsby/issues/10870 -->
+<!-- Gatsby’s markdown transformer doesn’t render nested lists properly: https://github.com/gatsbyjs/gatsby/issues/10870 -->
 <ul>
   <li>close the feedback loop typically associated with using these commands by providing as-you-type output</li>
   <li>increase visibility into what each command is doing by:</li>
