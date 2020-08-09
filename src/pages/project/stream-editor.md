@@ -23,7 +23,7 @@ media:
 type: software
 ---
 
-When software developers need more powerful text manipulation capabilities than a simple find-and-replace, go-to tools are Unix utilities like `sed`, `grep`, and `awk`. They’re incredibly powerful, but they can be intimidating for newcomers and a bit unwieldy even in the hands of seasoned developers. This is especially true for more complex use cases that involve chaining multiple commands together.
+When software developers need more powerful text manipulation capabilities than a simple find-and-replace, go-to tools are Unix utilities like `sed`, `grep`, and `awk`. They’re incredibly powerful, but they can be intimidating for newcomers and a bit unwieldy even in the hands of seasoned developers. This is especially true for complex use cases that involve chaining multiple commands together.
 
 I created Stream Editor as an interactive web interface for writing and debugging commands using these text transformation utilities. It aims to:
 
