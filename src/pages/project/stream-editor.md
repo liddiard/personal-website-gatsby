@@ -1,6 +1,6 @@
 ---
 title: Stream Editor
-description: Interactive UI for command-line text manipulation utilities
+description: Interactive tool for command-line text manipulation utilities
 order: 40
 link: https://streameditor.io
 involvement: creator
