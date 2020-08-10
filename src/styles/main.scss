@@ -99,6 +99,11 @@ nav {
   }
 }
 
+video, audio {
+  // don't use the body's "faux-outline" text shadow
+  text-shadow: none;
+}
+
 main {
   margin: 0 auto;
 }
