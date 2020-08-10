@@ -14,7 +14,11 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
-  text-shadow: 0 0 4px white;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
   margin: 1em;
   font-size: 1.1em;
 }
