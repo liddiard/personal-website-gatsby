@@ -22,7 +22,7 @@ media:
     caption: Headline balancer in use on an article (Image from The New York Times)
   - type: image
     filename: 7.png
-    caption: Headline balancer in use on the July 9, 2020 front page
+    caption: Headline balancer in use on the August 11, 2020 front page
 type: software
 ---
 
