@@ -3,6 +3,34 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
+
+const renderMedia = (post, media) => {
+  const { filename, type, caption } = media
+  const path = post.fields.slug + filename
+  let mediaElement
+  switch (type) {
+    case 'image':
+      mediaElement = <img src={path} alt={caption} />
+      break
+    case 'video':
+      mediaElement = <video src={path} controls autoPlay muted loop playsInline />
+      break
+    default:
+      console.error('unknown media type:', type);
+  }
+  return <figure key={filename}>
+    <a
+      title="Open in new window"
+      href={path}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {mediaElement}
+    </a>
+    <figcaption>{caption}</figcaption>
+  </figure>
+}
+
 export default ({ data }) => {
   const post = data.markdownRemark,
     metadata = post.frontmatter
@@ -32,23 +60,7 @@ export default ({ data }) => {
         <div className="article-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <aside>
-        {metadata.media.map(media => {
-          const { filename, type, caption } = media
-          const mediaPath = post.fields.slug + filename
-          switch (type) {
-            case 'image':
-              return <figure key={filename}>
-                <img src={mediaPath} alt={caption} />
-                  <figcaption>{caption}</figcaption>
-              </figure>
-            case 'video':
-              return <figure key={filename}>
-                <video src={mediaPath} controls autoPlay muted loop playsInline />
-                  <figcaption>{caption}</figcaption>
-              </figure>
-            default:
-              return console.error('unknown media type:', type);
-          }})}
+        {metadata.media.map(media => renderMedia(post, media))}
       </aside>
     </Layout>
   )
