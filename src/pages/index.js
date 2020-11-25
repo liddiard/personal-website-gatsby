@@ -63,7 +63,7 @@ export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescripti
   <p>Here are some things I enjoy doing, to varying levels of competency. Software-specific skills are in <span className="primary-accent"><strong>purple</strong></span>:</p>
   <Skills data={data} />
   <h2>Industries</h2>
-  <p>I’m particularly interested in work in these areas:</p>
+  <p>I’m particularly interested in these areas of work:</p>
   <Interests data={data} />
   <h2 id="projects">Projects</h2>
   Some things I’ve made (most recent first):
