@@ -31,9 +31,11 @@ const renderMedia = (post, media) => {
   </figure>
 }
 
-export default ({ data }) => {
+const Project = ({ data }) => {
   const post = data.markdownRemark,
-    metadata = post.frontmatter
+    metadata = post.frontmatter,
+    { media, description } = metadata,
+    firstImage = media.find(m => m.type === 'image')
   let link, github;
   if (metadata.link) {
     link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
@@ -47,7 +49,7 @@ export default ({ data }) => {
     </>
   }
   return (
-    <Layout page="project" pageTitle={metadata.title} metaDescription={metadata.description}>
+    <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImage }}>
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
@@ -60,7 +62,7 @@ export default ({ data }) => {
         <div className="article-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <aside>
-        {metadata.media.map(media => renderMedia(post, media))}
+        {media.map(media => renderMedia(post, media))}
       </aside>
     </Layout>
   )
@@ -89,3 +91,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Project

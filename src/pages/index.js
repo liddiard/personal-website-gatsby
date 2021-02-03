@@ -53,7 +53,7 @@ const renderProjects = (edges) => (
 )
 
 const metaDescription = 'Harrison Liddiard is a software engineer in the California San Francisco Bay Area working at PayPal. See his projects and resume.';
-export default ({ data }) => <Layout page="front" pageTitle="Home" metaDescription={metaDescription}>
+const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ description: metaDescription }}>
   <header>
     <h1 className="name">Harrison Liddiard</h1>
     <p className="tagline">Software engineer, event planning enthusiast, aspiring pilot</p>
@@ -114,3 +114,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Home
