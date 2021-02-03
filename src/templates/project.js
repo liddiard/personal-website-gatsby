@@ -3,10 +3,12 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
+const getMediaPath = (post, media) =>
+  post.fields.slug + media.filename
 
 const renderMedia = (post, media) => {
   const { filename, type, caption } = media
-  const path = post.fields.slug + filename
+  const path = getMediaPath(post, media)
   let mediaElement
   switch (type) {
     case 'image':
@@ -35,7 +37,8 @@ const Project = ({ data }) => {
   const post = data.markdownRemark,
     metadata = post.frontmatter,
     { media, description } = metadata,
-    firstImage = media.find(m => m.type === 'image')
+    firstImage = media.find(m => m.type === 'image'),
+    firstImagePath = firstImage && getMediaPath(post, firstImage)
   let link, github;
   if (metadata.link) {
     link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
@@ -49,7 +52,7 @@ const Project = ({ data }) => {
     </>
   }
   return (
-    <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImage }}>
+    <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`}}>
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>

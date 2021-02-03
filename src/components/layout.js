@@ -8,7 +8,7 @@ export default ({ page, children, pageTitle, meta }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{pageTitle + ' | Harrison Liddiard'}</title>
-      <meta property="og:image" content={meta.image || '/img/default_og_image.png'} />
+      <meta property="og:image" content={meta.image || 'https://harrisonliddiard.com/img/default_og_image.png'} />
       {meta.description ? <meta name="description" content={meta.description} /> : null}
     </Helmet>
     <Header />
