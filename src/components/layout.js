@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Footer from './footer'
 import Header from './header'
 
-export default ({ page, children, pageTitle, meta }) => (
+export default ({ page, children, pageTitle, meta = {} }) => (
   <main className={`container ${page ? page : ''}`}>
     <Helmet>
       <meta charSet="utf-8" />
