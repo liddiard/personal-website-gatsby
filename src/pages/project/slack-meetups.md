@@ -1,6 +1,6 @@
 ---
 title: Slack Meetups
-description: Bot to randomly pair people for one-on-one chats
+description: Bot that pairs people for one-on-one chats
 order: 30
 involvement: creator
 skills: Python, Django, Slack API, database design, D3.js, data visualization

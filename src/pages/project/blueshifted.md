@@ -1,5 +1,5 @@
 ---
-title: Blueshifted (short film)
+title: Blueshifted
 description: Director of photography and special effects for a short film
 order: 2
 link: https://vimeo.com/73665579
