@@ -8,6 +8,9 @@ skills: Jekyll, Sass, web development, data journalism
 github: daily-bruin/the-stack
 media:
   - type: image
+    filename: splash.svg
+    caption: Logo I designed for The Stack. Screenshots of posts below.
+  - type: image
     filename: 1.png
   - type: image
     filename: 2.png
