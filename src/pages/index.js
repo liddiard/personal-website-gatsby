@@ -52,7 +52,7 @@ const renderProjects = (edges) => (
   </ul>
 )
 
-const metaDescription = 'Harrison Liddiard is a software engineer in the California San Francisco Bay Area working at PayPal. See his projects and resume.';
+const metaDescription = 'Harrison Liddiard is a software engineer whoʼs working at PayPal in the San Francisco Bay Area, California. See his projects and resume.';
 const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ description: metaDescription }}>
   <header>
     <h1 className="name">Harrison Liddiard</h1>
