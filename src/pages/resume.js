@@ -10,8 +10,8 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     <ul id="contact">
       <li><img src="/img/phone.png" alt="phone icon" />+1 480-382-0676</li>
       <li><img src="/img/email.png" alt="email icon" />harrison@liddiard.com</li>
-      <li style={{ marginLeft: '-0.2em' }}><img src="/img/github.png" alt="github icon" />liddiard</li>
       <li><img src="/img/globe.png" alt="globe icon" />harrisonliddiard.com</li>
+      <li style={{ marginLeft: '-0.2em' }}><img src="/img/github.png" alt="github icon" />liddiard</li>
     </ul>
   </header>
   <div
@@ -26,13 +26,13 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
   <section className="col left">
     <h2>Work Experience</h2>
     <div className="item">
-      <h3 className="position">Software Engineer 1 & 2 <span className="date">2017 – present</span></h3>
+      <h3 className="position">Software Engineer 3<span className="deemphasized"> (previously 1 & 2)</span> <span className="date">2017 – present</span></h3>
       <h4 className="company">PayPal</h4>
       <ul>
-        <li>Modernized merchant onboarding stack in React and Node.js.</li>
-        <li>Led programs to improve onboarding verification rate to increase net new actives.</li>
+        <li>Led experiments that improved onboarding completion rate and merchant product adoption.</li>
+        <li>Replatformed onboarding app flows to React + Node.js stack.</li>
         <li>Won internal and external hackathons for PayPal, recruited, helped plan PayPal’s annual developer conference.</li>
-        <li>Started a program to help recent college grads meet each other.</li>
+        <li>Developed program to help recent college grads meet each other.</li>
       </ul>
     </div>
     <div className="item">
@@ -57,9 +57,9 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       <h3 className="position">Web Developer & Designer <span className="date">2014 – 2017</span></h3>
       <h4 className="company">UCLA Athletics</h4>
       <ul>
-        <li>Worked among several departments to prioritize, design, and create pages for major athletic events.</li>
-        <li>Developed internal applications to improve workflow processes.</li>
-        <li>Worked with website provider to coordinate full site redesign, created web style guide.</li>
+        <li>Worked among several departments to prioritize, design, and create pages for UCLAʼs largest athletic events.</li>
+        <li>Created web style guide, worked with website provider to coordinate full site redesign.</li>
+        <li>Developed internal web applications to improve workflow processes.</li>
       </ul>
     </div>
     <div className="item">

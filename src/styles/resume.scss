@@ -46,6 +46,11 @@ main.resume {
 
   h3.position {
     margin-bottom: 0.2em;
+
+    .deemphasized {
+      font-weight: normal;
+      font-size: 0.9em;
+    }
   }
 
   h4.company {
