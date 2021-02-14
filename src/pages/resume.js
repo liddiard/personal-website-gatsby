@@ -29,7 +29,7 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       <h3 className="position">Software Engineer 3<span className="deemphasized"> (previously 1 & 2)</span> <span className="date">2017 – present</span></h3>
       <h4 className="company">PayPal</h4>
       <ul>
-        <li>Led experiments that improved onboarding completion rate and merchant product adoption.</li>
+        <li>Led experiments that improved onboarding completion rate and product adoption among sellers.</li>
         <li>Replatformed onboarding app flows to React + Node.js stack.</li>
         <li>Won internal and external hackathons for PayPal, recruited, helped plan PayPal’s annual developer conference.</li>
         <li>Developed program to help recent college grads meet each other.</li>
@@ -41,15 +41,15 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       <ul>
         <li>Increased CMS search speed 10x with Elasticsearch.</li>
         <li>Search frontend: reduced complexity, redesigned results display, implemented as-you-type feedback for queries.</li>
-        <li>Wrote a binary search typographic headline balancer that runs on all nytimes.com article pages.</li>
+        <li>Wrote binary search typographic headline balancer that runs on all nytimes.com article pages.</li>
       </ul>
     </div>
     <div className="item">
       <h3 className="position">hackNY Fellow, Software Engineering Intern <span className="date">Summer 2015</span></h3>
       <h4 className="company">Wyng</h4>
       <ul>
-        <li>Created customizable React components for campaign builder.</li>
-        <li>Server-side development in Django, Flask, MongoDB.</li>
+        <li>Created React-based widgets for interactive landing page builder.</li>
+        <li>Did server-side development in Django, Flask, MongoDB.</li>
         <li>Participated in hackNY Fellows mentorship program learning from NYC founders and civic leaders.</li>
       </ul>
     </div>
