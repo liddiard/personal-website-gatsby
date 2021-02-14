@@ -113,7 +113,7 @@ main.resume {
 
   .item {
     margin-bottom: 2em;
-    border-left: 1px solid #aaa;
+    border-left: 1px solid #bbb;
     padding-left: 1em;
 
     ul {
@@ -131,12 +131,17 @@ main.resume {
   .date {
     font-weight: normal;
     float: right;
-    color: #aaa;
+    color: #888;
   }
 
   ul.skills,
   ul.projects {
     list-style-type: none;
+
+    .deemphasized {
+      font-size: 0.9em;
+      color: #888;
+    }
   }
 
   .project-name {

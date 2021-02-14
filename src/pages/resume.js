@@ -79,14 +79,14 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
         </div>
     <h2>Technical Skills</h2>
     <ul className="skills item">
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>GraphQL</li>
-      <li>Python</li>
-      <li>Flask, Django</li>
-      <li>HTML, CSS</li>
-      <li>User experience design</li>
+      <li>JavaScript <span className="deemphasized">(experienced)</span></li>
+      <li>React <span className="deemphasized">(experienced)</span></li>
+      <li>Node.js <span className="deemphasized">(experienced)</span></li>
+      <li>GraphQL <span className="deemphasized">(familiar)</span></li>
+      <li>Python <span className="deemphasized">(familiar)</span></li>
+      <li>Django, Flask <span className="deemphasized">(familiar)</span></li>
+      <li>HTML, CSS <span className="deemphasized">(experienced)</span></li>
+      <li>UI design <span className="deemphasized">(familiar)</span></li>
     </ul>
     <h2>Projects</h2>
     <ul className="projects item">
