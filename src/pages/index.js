@@ -20,7 +20,7 @@ const Skills = ({ data }) => (
         key={node.id}
         style={
           node.type === 'software' ?
-            { color: '#6653ff' } : 
+            { color: '#6653ff', fontWeight: 'bold' } : 
             {}
         }>
         {node.name}
