@@ -8,6 +8,7 @@ main.resume {
   position: relative;
   font-family: $helvetica;
   line-height: 1.4;
+  overflow: hidden;
 
   h1,
   h2,
@@ -162,6 +163,7 @@ main.resume {
   .more {
     clear: both;
     overflow: hidden;
+    display: none;
 
     .experience {
       float: left;
@@ -229,5 +231,13 @@ main.resume {
   body {
     background: none;
     margin: 0;
+  }
+
+  main.resume {
+    box-shadow: none;
+    
+    .more {
+      display: block;
+    }
   }
 }

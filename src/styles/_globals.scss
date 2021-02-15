@@ -5,6 +5,8 @@ $primary-color: #6653ff;
 $separator-border: 2px solid $primary-color;
 $mono: "SFMono-Regular", Consolas, Menlo, Courier, "Courier New", monospace;
 
+$wrapper-horizontal-padding: 2rem;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {

@@ -19,8 +19,8 @@ body {
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
-  margin: 1em;
   font-size: 1.1em;
+  margin: 0;
 }
 
 a {
@@ -106,11 +106,14 @@ video, audio {
 
 main {
   margin: 0 auto;
+  box-shadow: 0 0 512px rgba($primary-color, 0.15);
+  padding: 1rem $wrapper-horizontal-padding;
+  
 }
 
 main.front,
 main.credits {
-  max-width: 640px;
+  max-width: calc(640px + #{$wrapper-horizontal-padding * 2});
 }
 
 main.front {
@@ -140,7 +143,7 @@ main.front {
 
 footer {
   opacity: 0.5;
-  margin: 2em 0 4em;
+  margin: 2rem;
   text-align: right;
   max-width: 440px;
   float: right;
