@@ -60,7 +60,7 @@ const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ descrip
   </header>
   <p className="lede">Hi! I’m Harrison, a senior software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <a href="#projects">projects</a> below and my <Link to="/resume">resumé</Link> for some things I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
-  <p>Hereʼs some stuff I enjoy learning about and doing, to varying levels of competency. Software-specific <em>skills</em> are in <span className="primary-accent"><strong>purple</strong></span>:</p>
+  <p>Here’s some stuff I enjoy learning about and doing, to varying levels of competency. Software-specific <em>skills</em> are in <span className="primary-accent"><strong>purple</strong></span>:</p>
   <Skills data={data} />
   <h2>Industries</h2>
   <p>I’m particularly interested in these areas of work:</p>
