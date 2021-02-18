@@ -107,8 +107,13 @@ video, audio {
 main {
   margin: 0 auto;
   box-shadow: 0 0 512px rgba($primary-color, 0.15);
-  padding: 1rem $wrapper-horizontal-padding;
-  
+  padding: 1.5rem $wrapper-horizontal-padding;
+}
+
+@include media-query($on-laptop) {
+  main {
+    padding: 1.5rem;
+  }
 }
 
 main.front,
