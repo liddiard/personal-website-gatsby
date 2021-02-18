@@ -212,8 +212,7 @@ main.resume {
     }
 
     .page-title,
-    nav,
-    footer {
+    nav {
       display: none;
     }
 
@@ -231,6 +230,10 @@ main.resume {
   body {
     background: none;
     margin: 0;
+  }
+
+  footer {
+    display: none;
   }
 
   main.resume {
