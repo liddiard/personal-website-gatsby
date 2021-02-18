@@ -32,7 +32,7 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
         <li>Led experiments that improved onboarding completion rate and product adoption among sellers.</li>
         <li>Replatformed onboarding app flows to React + Node.js stack.</li>
         <li>Won internal and external hackathons for PayPal, recruited, helped plan PayPal’s annual developer conference.</li>
-        <li>Developed program to help recent college grads meet each other.</li>
+        <li>Developed program to help employees meet each other during pandemic.</li>
       </ul>
     </div>
     <div className="item">
@@ -48,25 +48,25 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       <h3 className="position">hackNY Fellow, Software Engineering Intern <span className="date">Summer 2015</span></h3>
       <h4 className="company">Wyng</h4>
       <ul>
-        <li>Created React-based widgets for interactive landing page builder.</li>
-        <li>Did server-side development in Django, Flask, MongoDB.</li>
-        <li>Participated in hackNY Fellows mentorship program learning from NYC founders and civic leaders.</li>
+        <li>Fellow for hackNY mentorship program which teaches in the intersection between civics and technology, led by Columbia and NYU faculty.</li>
+        <li>Developed full-stack with React, Django, and MongoDB.</li>
+        <li>Participated in user-driven product design with PMs, designers, and engineers to plan and scope product functionality.</li>
       </ul>
     </div>
     <div className="item">
       <h3 className="position">Web Developer & Designer <span className="date">2014 – 2017</span></h3>
       <h4 className="company">UCLA Athletics</h4>
       <ul>
-        <li>Worked among several departments to prioritize, design, and create pages for UCLAʼs largest athletic events.</li>
+        <li>Worked among several departments to prioritize, design, and code webpages for UCLAʼs largest athletic events.</li>
         <li>Created web style guide, worked with website provider to coordinate full site redesign.</li>
-        <li>Developed internal web applications to improve workflow processes.</li>
+        <li>Developed internal applications with Django and Node.js to improve workflow processes.</li>
       </ul>
     </div>
     <div className="item">
       <h3 className="position">Managing Editor, Digital <span className="date">2014 – 2015</span></h3>
       <h4 className="company">Daily Bruin</h4>
       <ul>
-        <li>Taught and advised 80+ people in web development, videography, and podcasting at the university newspaper.</li>
+        <li>Taught and advised 80 people in web development, videography, and podcasting at UCLA’s student news organization.</li>
         <li>Coordinated interdepartmental breaking news coverage and collaboration on feature stories.</li>
       </ul>
     </div>
@@ -75,7 +75,7 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     <h2>Education</h2>
     <div className="item">
       <h3 className="school">UCLA <span className="date">2017</span></h3>
-            B.A., Linguistics and Computer Science
+            B.A., Computer Science and Linguistics
         </div>
     <h2>Technical Skills</h2>
     <ul className="skills item">
