@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Footer from './footer'
 import Header from './header'
 
-export default ({ page, children, pageTitle, meta = {} }) => (
+const Layout = ({ page, children, pageTitle, meta = {} }) => (
   <>
     <main className={`container ${page ? page : ''}`}>
       <Helmet>
@@ -19,3 +19,5 @@ export default ({ page, children, pageTitle, meta = {} }) => (
     <Footer />
   </>
 )
+
+export default Layout

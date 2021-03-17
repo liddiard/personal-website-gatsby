@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-export default props => (
+const Header = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -18,11 +18,11 @@ export default props => (
         }
       }
     `}
-    render={data => <Header data={data} {...props} />}
+    render={data => <Nav data={data} {...props} />}
   />
 )
 
-const Header = ({ data }) => <nav>
+const Nav = ({ data }) => <nav>
   <ul>
     {data.allNavLinksJson.edges.map(({ node }) =>
       <li key={node.id}>
@@ -34,3 +34,5 @@ const Header = ({ data }) => <nav>
     )}
   </ul>
 </nav>
+
+export default Header
