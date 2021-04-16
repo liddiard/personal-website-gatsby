@@ -56,7 +56,7 @@ const metaDescription = 'Harrison Liddiard is a software engineer whoʼs working
 const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ description: metaDescription }}>
   <header>
     <h1 className="name">Harrison Liddiard</h1>
-    <p className="tagline">Software engineer, event planning enthusiast, aspiring pilot</p>
+    <p className="tagline">Software engineer, aviation & event planning enthusiast</p>
   </header>
   <p className="lede">Hi! I’m Harrison, a senior software engineer at <OutboundLink href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">PayPal</OutboundLink> and <OutboundLink href="https://ucla.edu" target="_blank" rel="noopener noreferrer">UCLA</OutboundLink> graduate. Check out my <a href="#projects">projects</a> below and my <Link to="/resume">resumé</Link> for some things I’ve done. You can also find me on <OutboundLink href="https://linkedin.com/in/liddiard" target="_blank" rel="noopener noreferrer">LinkedIn</OutboundLink> and <OutboundLink href="https://github.com/liddiard/" target="_blank" rel="noopener noreferrer">GitHub</OutboundLink>.</p>
   <h2>Skills & Interests</h2>
