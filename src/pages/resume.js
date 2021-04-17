@@ -57,16 +57,16 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       <h3 className="position">Web Developer & Designer <span className="date">2014 – 2017</span></h3>
       <h4 className="company">UCLA Athletics</h4>
       <ul>
-        <li>Worked among several departments to prioritize, design, and code webpages for UCLAʼs largest athletic events.</li>
-        <li>Created web style guide, worked with website provider to coordinate full site redesign.</li>
-        <li>Developed internal applications with Django and Node.js to improve workflow processes.</li>
+        <li>Worked among several departments to prioritize, design, and create webpages for UCLAʼs largest athletic events.</li>
+        <li>Authored web style guide, worked with website provider to coordinate full site redesign.</li>
+        <li>Developed internal apps with Node.js and Django to automate common tasks.</li>
       </ul>
     </div>
     <div className="item">
       <h3 className="position">Managing Editor, Digital <span className="date">2014 – 2015</span></h3>
       <h4 className="company">Daily Bruin</h4>
       <ul>
-        <li>Taught and advised 80 people in web development, videography, and podcasting at UCLA’s student news organization.</li>
+        <li>Taught and advised 80+ people in web development, videography, and podcasting at UCLA’s student news organization.</li>
         <li>Coordinated interdepartmental breaking news coverage and collaboration on feature stories.</li>
       </ul>
     </div>
@@ -99,11 +99,12 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     <h2>Other Skills & Achievements</h2>
     <ul className="skills item">
       <li>FAA-licensed Private Pilot</li>
-      <li>Audio & video editor</li>
-      <li>Event planner</li>
+      <li>PADI-certified scuba diver</li>
       <li>Eagle Scout with Bronze Palm</li>
-      <li>Yamaha Music School graduate</li>
       <li>Black belt in Kenpo</li>
+      <li>Yamaha Music School graduate</li>
+      <li>Event planner</li>
+      <li>Photo, audio, video editor</li>
     </ul>
   </section>
   <div className="more">
