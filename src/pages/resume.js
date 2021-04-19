@@ -98,7 +98,7 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     </ul>
     <h2>Other Skills & Achievements</h2>
     <ul className="skills item">
-      <li>FAA-licensed Private Pilot</li>
+      <li>FAA-licensed Private Airplane Pilot & commercial drone operator</li>
       <li>PADI-certified scuba diver</li>
       <li>Eagle Scout with Bronze Palm</li>
       <li>Black belt in Kenpo</li>
