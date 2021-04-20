@@ -17,7 +17,7 @@ media:
 type: software
 ---
 
-As a pilot in training, it’s important to know the weather conditions before taking to the skies. In particular, strong winds and low visibility can be hazardous to flying. There’s a standard way to represent visibility and cloud ceilings on aviation maps: Green represents good, VFR (Visual Flight Rules) conditions, while blue, red, and magenta represent progressively poorer weather. 
+As a Private Pilot, it’s important to know the weather conditions before taking to the skies. In particular, strong winds and low visibility can be hazardous to flying. There’s a standard way to represent visibility and cloud ceilings on aviation maps: Green represents good, VFR (Visual Flight Rules) conditions, while blue, red, and magenta represent progressively poorer weather. 
 
 Normally you’d check a website for this information, but what’s more fun and easy to check than a physical chart with LEDs representing flight conditions at nearby airports?
 
