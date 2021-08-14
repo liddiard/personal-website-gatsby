@@ -75,8 +75,8 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     <h2>Education</h2>
     <div className="item">
       <h3 className="school">UCLA <span className="date">2017</span></h3>
-            B.A., Computer Science and Linguistics
-        </div>
+      B.A., Computer Science and Linguistics
+    </div>
     <h2>Technical Skills</h2>
     <ul className="skills item">
       <li>JavaScript <span className="deemphasized">(experienced)</span></li>
@@ -110,10 +110,10 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
   <div className="more">
     <div className="experience">
       More work experience at <a href="https://linkedin.com/in/liddiard/">linkedin.com/in/liddiard</a>.
-        </div>
+    </div>
     <div className="projects">
       More projects at <a href="http://www.harrisonliddiard.com/">harrisonliddiard.com</a>.
-        </div>
+    </div>
   </div>
 </Layout>
 
