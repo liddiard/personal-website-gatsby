@@ -1,5 +1,5 @@
 ---
-title: Weather & Subway Info LED board
+title: Weather & subway info LED board
 description: Get essential data from a fridge magnet before heading out the door
 order: 50
 involvement: creator
