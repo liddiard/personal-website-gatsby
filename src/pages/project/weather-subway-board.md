@@ -19,9 +19,7 @@ Leaving my apartment used to involve a ritual of checking two apps: Android Weat
 
 A smart fridge? Nope – far from it. But it’s a fridge with a very smart magnet, a [64x32 RGB LED matrix](https://smile.amazon.com/gp/product/B07SDMWX9R/) driven by a Raspberry Pi. 
 
-I designed the display from scratch to show information I want to know before leaving: current and forecast weather, along with upcoming train departures from my local subway station.
-
-This display eliminates nearly all of the ‟use cases” where I used to have to check my phone on the way out the door.
+I designed the display from scratch to show information I want to know before leaving: current and forecast weather, along with upcoming train departures from my local subway station. This display eliminates nearly all of the ‟use cases” where had to check my phone on the way out the door.
 
 I’m pulling data from the free [weather.gov API](https://www.weather.gov/documentation/services-web-api) and [New York MTA realtime data feeds](https://api.mta.info/#/landing) with a Node.js app. I then generate the image to show on the matrix using [node-canvas](https://www.npmjs.com/package/canvas), which implements the [HTML Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
 
