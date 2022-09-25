@@ -136,6 +136,24 @@ main.front {
     margin-bottom: 2em;
   }
 
+  ul.skills,
+  ul.interests {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      white-space: nowrap;
+    }
+  }
+
+  ul.interests {
+    font-weight: bold;
+  }
+
   ul.projects {
     li {
       margin: 0.5em 0;
