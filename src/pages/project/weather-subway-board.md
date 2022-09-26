@@ -1,6 +1,6 @@
 ---
-title: Weather & subway info board
-description: Get essential data from a fridge magnet before heading out the door
+title: Weather & subway board
+description: Get essential info from an LED fridge magnet before heading out the door
 order: 50
 involvement: creator
 skills: JavaScript, HTML Canvas API, graphics, Python, hardware
