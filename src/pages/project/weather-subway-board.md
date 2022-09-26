@@ -7,11 +7,13 @@ skills: JavaScript, HTML Canvas API, graphics, Python, hardware
 github: liddiard/weather-subway-board
 media:
   - type: image
-    filename: board_photo.jpg
+    filename: board_photo_daytime.jpg
     caption: The LED matrix, attached to my fridge with magnetic screws. Raspberry Pi and “bonnet” board on the right edge.
   - type: image
     filename: board_explanation.png
     caption: Explanation of what each item on the board means. (Click image to enlarge.)
+  - type: image
+    filename: board_photo_evening.jpg
 type: software
 ---
 
@@ -25,4 +27,6 @@ I’m pulling data from the free [weather.gov API](https://www.weather.gov/docum
 
 This project posed unique design challenges in how to convey information within the constraints of a low-resolution display, like designing tiny weather icons that are still understandable. If there’s rain, for example, a degree of cloud cover is implied so I omit the cloud icon.
 
-Since I wasn’t using a graphing library, I also had to implement details like positioning the high and low temperature forecast labels right above their corresponding peaks and valleys on the line graph. This alone ended up taking [roughly 200 lines of code](https://github.com/liddiard/weather-subway-board/blob/main/src/display/forecast.js), identifying increasing and decreasing temperature intervals, centering labels, and checking bounding boxes. 
+Since I wasn’t using a graphing library, I also had to implement details like positioning the high and low temperature forecast labels right above their corresponding peaks and valleys on the line graph. This alone ended up taking [roughly 200 lines of code](https://github.com/liddiard/weather-subway-board/blob/main/src/display/forecast.js), identifying increasing and decreasing temperature intervals, centering labels, and checking bounding boxes.
+
+The end product is a colorful conversation starter that helps me get out the door quickly and prepared.
