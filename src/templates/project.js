@@ -44,12 +44,14 @@ const Project = ({ data }) => {
     link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
   }
   if (metadata.github) {
-    github = <>
-      <strong>Code:</strong>{" "}
-      <OutboundLink href={`https://github.com/${metadata.github}`} target="_blank" rel="noopener noreferrer">
-        {metadata.github}
-      </OutboundLink>
-    </>
+    github = <div>
+      <dt>Code:</dt>{" "}
+      <dd>
+        <OutboundLink href={`https://github.com/${metadata.github}`} target="_blank" rel="noopener noreferrer">
+          {metadata.github}
+        </OutboundLink>
+      </dd>
+    </div>
   }
   return (
     <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`}}>
@@ -57,11 +59,15 @@ const Project = ({ data }) => {
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
         {link}
-        <div className="project-info">
-          <strong>Involvement:</strong> {metadata.involvement}<br/>
-          <strong>Skills:</strong> {metadata.skills}<br/>
+        <dl className="project-info">
+          <div>
+            <dt>Involvement:</dt> <dd>{metadata.involvement}</dd>
+          </div>
+          <div>
+            <dt>Skills:</dt> <dd>{metadata.skills}</dd>
+          </div>
           {github}
-        </div>
+        </dl>
         <div className="article-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <aside>
