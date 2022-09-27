@@ -3,7 +3,7 @@ title: Weather & subway board
 description: Get essential info from an LED fridge magnet before heading out the door
 order: 50
 involvement: creator
-skills: JavaScript, HTML Canvas API, graphics, Python, hardware
+skills: JavaScript, HTML Canvas API, Python, graphics, hardware
 github: liddiard/weather-subway-board
 media:
   - type: image
@@ -17,7 +17,7 @@ media:
 type: software
 ---
 
-Leaving my apartment used to involve a ritual of checking two apps: Android Weather to decide what to wear, and [Citymapper](https://citymapper.com/) to see when the next trains were arriving. Now, I just glance at my fridge.
+Leaving my apartment used to involve a ritual of checking two apps: Android Weather to decide what to wear, and [Citymapper](https://citymapper.com/) to see when the next trains were arriving. Now though, I just glance at my fridge.
 
 A smart fridge? Nope – far from it. But it’s a fridge with a very smart magnet, a [64x32 RGB LED matrix](https://smile.amazon.com/gp/product/B07SDMWX9R/) driven by a Raspberry Pi. 
 
