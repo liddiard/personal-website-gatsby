@@ -14,7 +14,7 @@ media:
     caption: Explanation of what each item on the board means. (Click image to enlarge.)
   - type: video
     filename: timelapse.mp4
-    caption: Timelapse
+    caption: Timelapse over a few hours
 type: software
 ---
 
