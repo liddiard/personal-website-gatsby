@@ -12,8 +12,9 @@ media:
   - type: image
     filename: board_explanation.png
     caption: Explanation of what each item on the board means. (Click image to enlarge.)
-  - type: image
-    filename: board_photo_evening.jpg
+  - type: video
+    filename: timelapse.mp4
+    caption: Timelapse
 type: software
 ---
 
