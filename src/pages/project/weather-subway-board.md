@@ -28,6 +28,6 @@ I’m pulling data from the free [weather.gov API](https://www.weather.gov/docum
 
 This project posed unique design challenges in how to convey information within the constraints of a low-resolution display, like designing tiny weather icons that are still understandable. If there’s rain, for example, a degree of cloud cover is implied so I omit the cloud icon.
 
-Since I wasn’t using a graphing library, I also had to implement details like positioning the high and low temperature forecast labels right above their corresponding peaks and valleys on the line graph. This alone ended up taking [roughly 200 lines of code](https://github.com/liddiard/weather-subway-board/blob/main/src/display/forecast.js), identifying increasing and decreasing temperature intervals, centering labels, and checking bounding boxes.
+Since I wasn’t using a graphing library, I also had to implement details like positioning the high and low temperature forecast labels right above their corresponding peaks and valleys on the line graph. This required [roughly 200 lines of code](https://github.com/liddiard/weather-subway-board/blob/main/src/display/forecast.js) to identify increasing and decreasing temperature intervals, center labels, and check for pixel collisions.
 
 The end product is a colorful conversation starter that helps me get out the door quickly and prepared.
