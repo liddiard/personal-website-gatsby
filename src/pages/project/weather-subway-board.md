@@ -7,7 +7,7 @@ skills: JavaScript, HTML Canvas API, Python, graphics, hardware
 github: liddiard/weather-subway-board
 media:
   - type: image
-    filename: board_photo_daytime.jpg
+    filename: board_photo_evening.jpg
     caption: The LED matrix, attached to my fridge with magnetic screws. Raspberry Pi and “bonnet” board on the right edge.
   - type: image
     filename: board_explanation.png
