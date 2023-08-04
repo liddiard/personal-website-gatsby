@@ -1,0 +1,26 @@
+@import "globals";
+
+.smarthome {
+  max-width: 640px;
+
+  section {
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba($primary-color, 0.15);
+
+    ul {
+      font-size: 1.4em;
+      margin: 0.75em 0;
+    }
+
+    h2, h3, h4, h5, h6 {
+      margin: 0.25em 0;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .smarthome {
+    font-size: 0.85em;
+  }
+}
