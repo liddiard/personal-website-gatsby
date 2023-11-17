@@ -158,6 +158,12 @@ main.resume {
       padding-left: 1px;
       vertical-align: bottom;
     }
+
+    @media (prefers-color-scheme: dark) {
+      img {
+        filter: invert(1);
+      }
+    }
   }
 
   .more {
