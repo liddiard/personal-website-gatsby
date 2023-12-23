@@ -1,7 +1,7 @@
 ---
 title: TypeEmoji
 description: The no-nonsense emoji search keyboard
-order: 10
+year: 2016
 link: http://typeemoji.com
 involvement: creator
 skills: React, ECMAScript 6, Sass, Amazon S3

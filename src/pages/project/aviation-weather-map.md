@@ -1,7 +1,7 @@
 ---
 title: Aviation Weather Map
 description: Visualize flight conditions with hardware & software
-order: 25
+year: 2019
 involvement: contributor / creator
 skills: Python, animation, hardware
 github: liddiard/aviation-weather-map

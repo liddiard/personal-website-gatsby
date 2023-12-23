@@ -44,14 +44,14 @@ const Project = ({ data }) => {
     link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
   }
   if (metadata.github) {
-    github = <div>
-      <dt>Code:</dt>{" "}
-      <dd>
+    github = <tr>
+      <td>Code</td>
+      <td>
         <OutboundLink href={`https://github.com/${metadata.github}`} target="_blank" rel="noopener noreferrer">
           {metadata.github}
         </OutboundLink>
-      </dd>
-    </div>
+      </td>
+    </tr>
   }
   return (
     <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`}}>
@@ -59,15 +59,19 @@ const Project = ({ data }) => {
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
         {link}
-        <dl className="project-info">
-          <div>
-            <dt>Involvement:</dt> <dd>{metadata.involvement}</dd>
-          </div>
-          <div>
-            <dt>Skills:</dt> <dd>{metadata.skills}</dd>
-          </div>
-          {github}
-        </dl>
+        <table className="project-info">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>{metadata.year}</td>
+            </tr>
+            <tr>
+              <td>Skills</td>
+              <td>{metadata.skills}</td>
+            </tr>
+            {github}
+          </tbody>
+        </table>
         <div className="article-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <aside>
@@ -87,9 +91,9 @@ export const query = graphql`
       frontmatter {
         title
         description
+        year
         link
         github
-        involvement
         skills
         media {
           caption

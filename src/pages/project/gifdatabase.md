@@ -1,7 +1,7 @@
 ---
 title: GIFdatabase
 description: Crowdsourced animated GIF search
-order: 6
+year: 2013
 involvement: creator
 skills: Django, PostgreSQL, image processing, user accounts, Amazon S3, caching, jQuery, web development
 github: liddiard/gifdatabase

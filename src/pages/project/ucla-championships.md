@@ -1,7 +1,7 @@
 ---
 title: UCLA Bruins championships showcase
 description: "Explore the Bruins’ history of wins"
-order: 13
+year: 2016
 link: http://uclabruins.com/championships
 involvement: creator
 skills: React, ES6, Sass, UI design

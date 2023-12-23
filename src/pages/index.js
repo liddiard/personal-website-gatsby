@@ -30,7 +30,7 @@ const Interests = ({ data }) => (
 const renderProjects = (edges) => (
   <ul className="projects">
     {edges
-      .sort((a, b) => b.node.frontmatter.order - a.node.frontmatter.order)
+      .sort((a, b) => b.node.frontmatter.year - a.node.frontmatter.year)
       .map(({ node }) => (
         <li key={node.id}>
           <Link
@@ -44,7 +44,7 @@ const renderProjects = (edges) => (
 )
 
 const metaDescription = 'Harrison Liddiard is a technical product manager working at PayPal in New York City. See his projects and resume.';
-const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ description: metaDescription }}>
+const Home = ({ data }) => <Layout page="front" meta={{ description: metaDescription }}>
   <header>
     <h1 className="name">Harrison Liddiard</h1>
     <p className="tagline">Product manager, design & aviation enthusiast</p>
@@ -57,13 +57,9 @@ const Home = ({ data }) => <Layout page="front" pageTitle="Home" meta={{ descrip
   <p>I’m particularly interested in these areas of work:</p>
   <Interests data={data.allInterestsJson} />
   <h2 id="projects">Projects</h2>
-  Some things I’ve made (most recent first):
-  <h3>Software</h3>
+  Some things I’ve made – most recent first:
   {renderProjects(data.allMarkdownRemark.edges
     .filter(({ node }) => node.frontmatter.type === 'software'))}
-  <h3>Video</h3>
-  {renderProjects(data.allMarkdownRemark.edges
-    .filter(({ node }) => node.frontmatter.type !== 'software'))}
 </Layout>
 
 export const query = graphql`
@@ -76,7 +72,7 @@ export const query = graphql`
           frontmatter {
             title
             description
-            order
+            year
             type
           }
           fields {

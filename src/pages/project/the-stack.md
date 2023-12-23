@@ -1,7 +1,7 @@
 ---
 title: The Stack
 description: Data journalism and newsroom tech blog
-order: 11
+year: 2015
 link: https://stack.dailybruin.com
 involvement: editor, website creator
 skills: Jekyll, Sass, web development, data journalism

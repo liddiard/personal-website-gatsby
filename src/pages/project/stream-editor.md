@@ -1,7 +1,7 @@
 ---
 title: Stream Editor
 description: Interactively use command-line text manipulation utilities
-order: 40
+year: 2020
 link: https://streameditor.io
 involvement: creator
 skills: React, Flask, Python, Unix, web development

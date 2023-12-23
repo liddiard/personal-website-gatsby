@@ -1,7 +1,7 @@
 ---
 title: kikl.co
 description: The link shortener for easy to type and remember URLs
-order: 15
+year: 2014
 involvement: creator
 skills: Django, PostgreSQL, SQL queries, rate limiting, user accounts
 link: http://kikl.co

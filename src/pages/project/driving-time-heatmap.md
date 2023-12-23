@@ -1,7 +1,7 @@
 ---
 title: Driving Time Heatmap
 description: See transportation times to surrounding areas in different traffic conditions
-order: 18
+year: 2017
 involvement: creator
 skills: data visualization, React, Google Maps API
 link: https://driving-time-map.harrisonliddiard.com

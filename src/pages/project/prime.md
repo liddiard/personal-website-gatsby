@@ -1,7 +1,7 @@
 ---
 title: prime
 description: Quarterly lifestyle magazine
-order: 5
+year: 2013
 involvement: website creator
 skills: Django, PostgreSQL, parsing, content management, web development
 link: http://graphics.dailybruin.com/prime

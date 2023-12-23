@@ -1,7 +1,7 @@
 ---
 title: Weather & subway board
 description: Get essential info from an LED fridge magnet before heading out the door
-order: 50
+year: 2022
 involvement: creator
 skills: JavaScript, HTML Canvas API, Python, graphics, hardware
 github: liddiard/weather-subway-board

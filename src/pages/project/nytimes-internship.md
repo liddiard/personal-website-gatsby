@@ -1,7 +1,7 @@
 ---
 title: New York Times internship
 description: Search optimization and typographic headline balancing
-order: 17
+year: 2016
 involvement: developer
 skills: Backbone, Marionette, Elasticsearch, React, Java
 link: https://open.nytimes.com/headline-balancing-act-6e92d3d6119

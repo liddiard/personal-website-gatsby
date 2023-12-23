@@ -8,7 +8,7 @@ const Layout = ({ page, children, pageTitle, meta = {} }) => (
     <main className={`container ${page ? page : ''}`}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{pageTitle + ' | Harrison Liddiard'}</title>
+        <title>{[ pageTitle, 'Harrison Liddiard' ].filter(Boolean).join(' | ')}</title>
         <meta property="og:image" content={meta.image || 'https://harrisonliddiard.com/img/default_og_image.png'} />
         {meta.description ? <meta name="description" content={meta.description} /> : null}
       </Helmet>
