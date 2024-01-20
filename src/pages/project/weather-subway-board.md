@@ -1,5 +1,5 @@
 ---
-title: Weather & subway board
+title: Weather & transit board
 description: Get essential info from an LED fridge magnet before heading out the door
 year: 2022
 involvement: creator
@@ -7,14 +7,16 @@ skills: JavaScript, HTML Canvas API, Python, graphics, hardware
 github: liddiard/weather-subway-board
 media:
   - type: image
-    filename: board_photo_evening.jpg
+    filename: board_front.jpg
     caption: The LED matrix, attached to my fridge with magnetic screws. Raspberry Pi and “bonnet” board on the right edge.
-  - type: image
-    filename: board_explanation.png
-    caption: Explanation of what each item on the board means. (Click image to enlarge.)
   - type: video
     filename: timelapse.mp4
     caption: Timelapse over a few hours
+  - type: image
+    filename: board_explanation.png
+    caption: Explanation of what everything on the board means. (Click image to enlarge.)
+  - type: image
+    filename: board_detail_top_left.jpg
 type: software
 ---
 
