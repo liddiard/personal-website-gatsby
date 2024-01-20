@@ -33,15 +33,51 @@ const renderMedia = (post, media) => {
   </figure>
 }
 
+// given a URL, strip the protocol and return only host + pathname
+const prettifyUrl = (url) => {
+  try {
+    const { host, pathname } = new URL(url)
+    return host + (pathname === '/' ? '' : pathname)
+  } catch (error) {
+    return url
+  }
+}
+
 const Project = ({ data }) => {
   const post = data.markdownRemark,
     metadata = post.frontmatter,
     { media, description } = metadata,
     firstImage = media.find(m => m.type === 'image'),
     firstImagePath = firstImage && getMediaPath(post, firstImage)
+
+  const handleLinkClick = (ev) => {
+    const { linkConfirmation } = metadata
+    if (!linkConfirmation) {
+      return
+    }
+    ev.preventDefault()
+    const proceed = window.confirm(linkConfirmation)
+    if (proceed) {
+      window.open(metadata.link, '_blank', 'noopener,noreferrer');
+    }
+  }
+
   let link, github;
   if (metadata.link) {
-    link = <OutboundLink href={metadata.link} target="_blank" rel="noopener noreferrer" className="project-link">{metadata.link}</OutboundLink>;
+    link = <tr>
+      <td>Link</td>
+      <td>
+        <OutboundLink 
+          href={metadata.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleLinkClick}
+          className="project-link"
+        >
+          {prettifyUrl(metadata.link)}
+        </OutboundLink>
+      </td>
+    </tr>
   }
   if (metadata.github) {
     github = <tr>
@@ -53,14 +89,15 @@ const Project = ({ data }) => {
       </td>
     </tr>
   }
+
   return (
     <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`}}>
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
-        {link}
         <table className="project-info">
           <tbody>
+            {link}
             <tr>
               <td>Year</td>
               <td>{metadata.year}</td>
@@ -93,6 +130,7 @@ export const query = graphql`
         description
         year
         link
+        linkConfirmation
         github
         skills
         media {
