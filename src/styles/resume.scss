@@ -1,5 +1,6 @@
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $oxygen: "Oxygen", $helvetica;
+$gray: #888;
 
 main.resume {
   font-size: 1rem;
@@ -47,15 +48,21 @@ main.resume {
 
   h3.position {
     margin-bottom: 0.2em;
-
-    .deemphasized {
-      font-weight: normal;
-      font-size: 0.9em;
-    }
   }
 
   h4.company {
     margin-bottom: 0;
+  }
+
+  .deemphasized {
+    font-size: 0.9em;
+    color: $gray;
+  }
+
+  .tech-skills {
+    p {
+      margin: 0.75em 0;
+    }
   }
 
   .header-resume {
@@ -132,17 +139,12 @@ main.resume {
   .date {
     font-weight: normal;
     float: right;
-    color: #888;
+    color: $gray;
   }
 
   ul.skills,
   ul.projects {
     list-style-type: none;
-
-    .deemphasized {
-      font-size: 0.9em;
-      color: #888;
-    }
   }
 
   .project-name {
