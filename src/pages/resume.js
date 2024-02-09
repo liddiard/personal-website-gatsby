@@ -21,7 +21,7 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     onClick={() => window ? window.print() : null}
     onKeyPress={() => window.print()}
   >
-    Print <img src="/img/print.png" alt="print" />
+    PDF / Print <img src="/img/print.png" alt="print" />
   </div>
   <section className="col left">
     <h2>Work Experience</h2>
