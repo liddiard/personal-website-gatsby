@@ -24,7 +24,7 @@ With ongoing demand for a way to search the podcast for specific moments and top
 
 First, I wrote a suite of Python utilities to download and transcribe episodes using OpenAI’s [Whisper speech recognition model](https://github.com/openai/whisper), then correct the resulting documents for common mistranscriptions. 
 
-With over 6 million words across nearly 15,000 minutes of dialogue, the next challenge was search. I landed on open-source [Typesense](https://typesense.org/) as a search engine with the right mix performance and feature set.
+With over 6 million words across nearly 15,000 minutes of dialogue, the next challenge was search. I landed on open-source [Typesense](https://typesense.org/) as a search engine with the right blend of performance and feature set.
 
 Finally, I built the UI to tie it all together on a modern stack using Next.js with TypeScript. The web application enables users to search every episode in a fraction of a second and directly jump into playing the podcast at specific moments.
 
