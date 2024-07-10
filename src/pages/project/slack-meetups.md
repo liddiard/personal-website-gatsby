@@ -35,4 +35,4 @@ My Slack application is designed to be user-friendly and flexible. It supports c
 
 Leveraging Django’s admin interface, there are handy dashboards to configure pairing pools, create new rounds, and view pairings. To provide transparency and encourage participation, the bot automatically generates leaderboards and data visualzations with D3.js showing past pairings.
 
-From 2020–2022, the bot was actively used by hundreds of employees across several organizations within PayPal to form thousands of pairings. It enabled interns and new employees to meet new people, foster team culture, and bring back some of the “randomly running into people in the hallway for a chat” serendipity in a post-COVID WFH workplace.
+From 2020–2022, the bot was actively used by hundreds of employees across several organizations within PayPal to form thousands of pairings. It enabled interns and new employees to meet new people, foster team culture, and bring back some of the “randomly running into people in the hallway for a chat” serendipity in a post COVID, remote-work workplace.
