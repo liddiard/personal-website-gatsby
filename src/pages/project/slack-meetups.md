@@ -27,12 +27,12 @@ media:
 type: software
 ---
 
-Talking with someone one-on-one is a great way to form new connections in a company or organization. Slack is prevelant these days, and though the idea of randomly pairing people to grab lunch or coffee with each other isn’t new, existing bots like [Donut](https://www.donut.com) and [randomcoffee](https://www.random-coffee.com/) are paid and/or closed source.
+Talking with someone one-on-one is a great way to form new connections in a company or group. Slack is prevelant, and though the idea of randomly pairing people to grab lunch or coffee with each other isn’t new, existing bots like [Donut](https://www.donut.com) and [randomcoffee](https://www.random-coffee.com/) are "freemium" and closed source.
 
-I made an open-source alternative that people can build on and deploy, fully knowing how their Slack data is being used instead of trusting an unknown third party application, which is a must for a lot of corporate information security policies.
+I made an open-source alternative that anyone can deploy and build on with unlimited groups and users. It also allows you to fully control how your Slack data is being used instead of trusting a third party application, which is a must for a lot of corporate InfoSec policies.
 
 My Slack application is designed to be user-friendly and flexible. It supports configuring multiple pairing pools in different Slack channels and creating rounds with custom frequency and duration. The bot onboards people, asks their availability, randomly pairs them group messages to meet up, and collects feedback on who actually met.
 
 Leveraging Django’s admin interface, there are handy dashboards to configure pairing pools, create new rounds, and view pairings. To provide transparency and encourage participation, the bot automatically generates leaderboards and data visualzations with D3.js showing past pairings.
 
-As of June 2020, the bot is being actively used by hundreds of employees across several organizations within PayPal, from data scientists to interns, to meet new people, keep team culture alive, and bring back some of the “randomly running into people in the hallway” serendipity during the COVID-19 work-from-home situation.
+From 2020–2022, the bot was actively used by hundreds of employees across several organizations within PayPal to form thousands of pairings. It enabled interns and new employees to meet new people, foster team culture, and bring back some of the “randomly running into people in the hallway for a chat” serendipity in a post-COVID WFH workplace.
