@@ -3,7 +3,7 @@ title: Slack Meetups
 description: Bot that pairs people for one-on-one chats
 year: 2020
 involvement: creator
-skills: Python, Django, Slack API, database design, D3.js, data visualization
+skills: Python, Django, Slack API, database design, D3.js, data visualization, Docker
 github: liddiard/slack-meetups
 media:
   - type: image
