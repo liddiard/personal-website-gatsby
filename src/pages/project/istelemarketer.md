@@ -4,7 +4,6 @@ description: Should you pick up the phone?
 year: 2013
 involvement: creator
 skills: Django, data scraping, unit testing, web development
-link: http://istelemarketer.harrisonliddiard.com
 github: liddiard/istelemarketer
 media:
   - type: image
