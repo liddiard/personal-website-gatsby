@@ -13,6 +13,10 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
+  "engines": {
+    "node": "20",
+    "npm": "10"
+  },
   "dependencies": {
     "gatsby": "^5.13.1",
     "gatsby-plugin-google-analytics": "^5.13.0",
