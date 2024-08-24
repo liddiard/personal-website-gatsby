@@ -26,7 +26,7 @@ media:
 type: software
 ---
 
-I’ve created a home server setup that enables me to save money in several ways, block ads and trackers, and even stay cool in summer. Let me explain….
+I built out a home server setup that enables me to save money in several ways, block ads and trackers, and even stay cool in summer. Let me explain….
 
 My local setup has two primary servers that host an array of containerized services:
 
