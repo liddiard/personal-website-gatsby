@@ -58,4 +58,4 @@ So, how does this save me money? A few examples:
 
 **Solution:** I’ve set up an indoor air sensor that feeds metrics like temperature into Home Assistant, and I added a smart plug to my AC. With Home Assistant’s built-in [thermostat integration](https://www.home-assistant.io/integrations/generic_thermostat/), I connected the two to create a thermostat that I can control from anywhere. It’s much more accurate than the one built in to the AC unit.
 
-I also have location-based automations set up to send a notification prompting me to turn off the thermostat if I leave with it on, as well as one to turn it back on when I leave work for home.
+I also set up location-based automations to send a notification prompting me to turn off the thermostat if I leave with it on, as well as one to turn it back on when I leave work for home.
