@@ -80,6 +80,10 @@ ul {
   list-style-type: square;
 }
 
+ul ul {
+  list-style-type: circle;
+}
+
 nav {
   margin-bottom: 1.5em;
   // specificity overrides for resume styles
@@ -97,6 +101,12 @@ nav {
       padding-right: 1em;
     }
   }
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  margin: 1.5em 0;
 }
 
 video, audio {
