@@ -42,13 +42,13 @@ My local setup has two primary servers that host an array of containerized servi
 
 So, how does this save me money? A few examples:
 
-**Problem:** [Google Photos](https://photos.google.com/) is super convenient with its friendly UI, machine learning-powered search, and tight integration with my phone. But I don’t want to pay Google increasingly large amounts of money throughout my life for them to store my increasingly large photo and video library.
+**Problem:** [Google Photos](https://photos.google.com/) is super convenient with its friendly interface, machine learning-powered search, and tight integration with my phone. But I don’t want to pay Google increasingly large amounts of money throughout my life for them to store my increasingly large photo and video library.
 
 **Solution:** [Immich](https://immich.app/) provides the same core features as Google Photos including web and mobile UIs, auto-upload from phone, shareable albums, facial recognition, and geospatial + ML-powered semantic search. But here, the only incremental cost is buying a hard drive. That 2TB drive pays for itself in a few months with Google charging $10/mo. for the [same storage on Google One](https://one.google.com/about/plans).
 
 ---
 
-**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the crazy markups that Apple charges for storage bumps on their MacBooks.
+**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the crazy markups that Apple charges for storage bumps on MacBooks.
 
 **Solution:** My network-attached storage (NAS) enables Finder-integrated access to big files on a drive in my network using the SMB file-sharing protocol. It’s the benefits of having a ton of space at your disposal without the costs of paying for more on-device storage or the clunkiness of plugging in external drives.
 
