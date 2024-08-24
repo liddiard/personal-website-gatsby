@@ -48,13 +48,13 @@ So, how does this save me money? A few examples:
 
 ---
 
-**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the crazy markups that Apple charges for storage bumps on MacBooks.
+**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the crazy markups ($200–$800+) that Apple charges for storage bumps on MacBooks.
 
 **Solution:** My network-attached storage (NAS) enables Finder-integrated access to big files on a drive in my network using the SMB file-sharing protocol. It’s the benefits of having a ton of space at your disposal without the costs of paying for more on-device storage or the clunkiness of plugging in external drives.
 
 ---
 
-**Problem:** I want to turn off my AC while I’m not home to save energy, but I also want to turn it on before I get home so it’s already cool when I arrive. My “smart” window air conditioner wants to bill me monthly to use their app to control it remotely.
+**Problem:** I want to turn off my AC while I’m not home to save energy, but I also want to turn it on before I get home so it’s already cool when I arrive. My “smart” window air conditioner wants to bill me $5/mo. to use their app to control it remotely.
 
 **Solution:** I’ve set up an indoor air sensor that feeds metrics like temperature into Home Assistant, and I added a smart plug to my AC. With Home Assistant’s built-in [thermostat integration](https://www.home-assistant.io/integrations/generic_thermostat/), I connected the two to create a thermostat that I can control from anywhere. It’s much more accurate than the one built in to the AC unit.
 
