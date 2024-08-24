@@ -32,7 +32,7 @@ My local setup has two primary servers that host an array of containerized servi
 
 - **pihole**: Raspberry Pi 3B running core networking:
 	- **[Pi-hole](https://pi-hole.net/)**: popular ad blocker and DNS resolver. It essentially provides adblock for every device on the network – no browser extensions required
-	- **[cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns)**: script that monitors my public IP address and updates a DNS record on harrisonliddiard.com, providing consistent routing to my home network from the internet. Necessary for...
+	- **[cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns)**: script that monitors my public IP address and updates a DNS record, providing consistent routing to my home network from the internet. Necessary for...
 	- **[Wireguard](https://www.pivpn.io/)**: VPN server that facilitates secure connection to my home network from anywhere in the world
 - **webserver**: Raspberry Pi 5 running web applications and their supporting services:
 	- **[Home Assistant](https://www.home-assistant.io/)**: popular open-source home automation software that unifies smart light control, switches, and sensors into customizable dashboards
