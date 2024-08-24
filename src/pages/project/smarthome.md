@@ -26,9 +26,9 @@ media:
 type: software
 ---
 
-I’ve created a local server setup that enables me to save money (in several ways), block ads and trackers, and even stay cool in summer. Let me explain.
+I’ve created a home server setup that enables me to save money in several ways, block ads and trackers, and even stay cool in summer. Let me explain.
 
-My home setup has two primary servers that host an array of containerized services:
+My local setup has two primary servers that host an array of containerized services:
 
 - **pihole**: Raspberry Pi 3B running core networking:
 	- **[Pi-hole](https://pi-hole.net/)**: popular ad blocker and DNS resolver. It essentially provides adblock for every device on the network – no browser extensions required
