@@ -31,11 +31,11 @@ I built out a home server setup that enables me to save money in several ways, b
 My local setup has two primary servers that host an array of containerized services:
 
 - **pihole**: Raspberry Pi 3B running core networking:
-	- **[Pi-hole](https://pi-hole.net/)**: popular ad blocker and DNS resolver. It essentially provides adblock for every device on the network – no browser extensions required
+	- **[Pi-hole](https://pi-hole.net/)**: ad blocker and DNS resolver. It essentially provides adblock for every device on the network – no browser extensions required
 	- **[cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns)**: script that monitors my public IP address and updates a DNS record, providing consistent routing to my home network from the internet. Necessary for…
 	- **[Wireguard](https://www.pivpn.io/)**: VPN server that facilitates secure connection to my home network from anywhere in the world
 - **webserver**: Raspberry Pi 5 running web applications and their supporting services:
-	- **[Home Assistant](https://www.home-assistant.io/)**: popular open-source home automation software that unifies smart light control, switches, and sensors into customizable dashboards
+	- **[Home Assistant](https://www.home-assistant.io/)**: open-source home automation software that unifies smart light control, switches, and sensors into customizable dashboards
 	- **[Prometheus](https://prometheus.io/)**: time-series database enabling storage, query, and export of indoor air metrics from my [AirGradient sensor](https://www.airgradient.com/documentation/diy/): temperature, humidity, particulates, CO₂
 	- **[Immich](https://immich.app/)**: self-hosted photo and video management app comparable to Google Photos
 	- **[Transmission](https://transmissionbt.com/)**: torrent client with a web UI (a.k.a. seedbox) secured behind a VPN
