@@ -31,7 +31,7 @@ I built out a home server setup that enables me to save money in several ways, b
 My local setup has two primary servers that host an array of containerized services:
 
 - **pihole**: Raspberry Pi 3B running core networking:
-	- **[Pi-hole](https://pi-hole.net/)**: ad blocker and DNS resolver. It essentially provides adblock for every device on the network – no browser extensions required
+	- **[Pi-hole](https://pi-hole.net/)**: ad blocker and DNS resolver. It essentially gives adblock to every device on the network – no browser extensions required
 	- **[cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns)**: script that monitors my public IP address and updates a DNS record, providing consistent routing to my home network from the internet. Necessary for…
 	- **[Wireguard](https://www.pivpn.io/)**: VPN server that facilitates secure connection to my home network from anywhere in the world
 - **webserver**: Raspberry Pi 5 running web applications and their supporting services:
