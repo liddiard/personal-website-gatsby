@@ -48,7 +48,7 @@ So, how does this save me money? A few examples:
 
 ---
 
-**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the crazy markups ($200–$800+) that Apple charges for storage bumps on MacBooks.
+**Problem:** I want convenient local access to large files like videos, but I don’t want to pay the disproportionate markups in the range of $200–$800+ that Apple charges for storage bumps on MacBooks.
 
 **Solution:** My network-attached storage (NAS) enables Finder-integrated access to big files on a drive in my network using the SMB file-sharing protocol. It’s the benefits of having a ton of space at your disposal without the costs of paying for more on-device storage or the clunkiness of plugging in external drives.
 
