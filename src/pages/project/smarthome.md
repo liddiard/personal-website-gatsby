@@ -36,7 +36,7 @@ My local setup has two primary servers that host an array of containerized servi
 	- **[Wireguard](https://www.pivpn.io/)**: VPN server that facilitates secure connection to my home network from anywhere in the world
 - **webserver**: Raspberry Pi 5 running web applications and their supporting services:
 	- **[Home Assistant](https://www.home-assistant.io/)**: popular open-source home automation software that unifies smart light control, switches, and sensors into customizable dashboards
-	- **[Prometheus](https://prometheus.io/)**: time-series database enabling storage, query, and sharing of indoor air metrics from my [AirGradient sensor](https://www.airgradient.com/documentation/diy/): temperature, humidity, particulates, CO₂
+	- **[Prometheus](https://prometheus.io/)**: time-series database enabling storage, query, and export of indoor air metrics from my [AirGradient sensor](https://www.airgradient.com/documentation/diy/): temperature, humidity, particulates, CO₂
 	- **[Immich](https://immich.app/)**: self-hosted photo and video management app comparable to Google Photos
 	- **[Transmission](https://transmissionbt.com/)**: torrent client with a web UI (a.k.a. seedbox) secured behind a VPN
 
