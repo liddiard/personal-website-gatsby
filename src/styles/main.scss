@@ -78,6 +78,7 @@ ol {
 
 ul {
   list-style-type: square;
+  padding-inline-start: 1.5em;
 }
 
 ul ul {
@@ -109,7 +110,8 @@ hr {
   margin: 1.5em 0;
 }
 
-video, audio {
+video,
+audio {
   // don't use the body's "faux-outline" text shadow
   text-shadow: none;
 }
@@ -118,7 +120,7 @@ main {
   margin: 0 auto;
   box-shadow: 0 0 512px rgba($primary-color, 0.15);
   padding: 1.5rem $wrapper-horizontal-padding;
-  border: 1px solid rgba(255,255,255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 @include media-query($on-laptop) {
@@ -191,7 +193,8 @@ footer {
   color: $primary-color;
 }
 
-.giphy-embed { // used on the 404 page
+.giphy-embed {
+  // used on the 404 page
   border: $separator-border;
 }
 
