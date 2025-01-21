@@ -31,19 +31,19 @@ I suspect this little app is likely to get “[Sherlocked](https://www.howtogeek
 Here’s a sampling of queries and results that underscores how much richer the AI-powered TypeEmoji is than Apple’s current emoji picker:
 
 - query: “software development”
-  - Apple: 🧑‍💻, 👨‍💻, 👩‍💻
-  - TypeEmoji: 💻, 👨‍💻, 👩‍💻, 🖥️, 🔧, 📦, ⚙️, 🌐, 🚀, 🐞
+  - Apple: 🧑‍💻 👨‍💻 👩‍💻
+  - TypeEmoji: 💻 👨‍💻 👩‍💻 🖥️ 🔧 📦 ⚙️ 🌐 🚀 🐞
 - query: “triathalon”
   - Apple: (no results)
-  - TypeEmoji: 🏊‍♂️, 🚴‍♂️, 🏃‍♂️, 🏅, 🏆, 💪, 🌊, 🚵‍♀️, 🥇, ⏱️
+  - TypeEmoji: 🏊‍♂️ 🚴‍♂️ 🏃‍♂️ 🏅 🏆 💪 🌊 🚵‍♀️ 🥇 ⏱️
 - query: “new york city”
   - Apple: 🗽
-  - TypeEmoji: 🗽, 🌆, 🚖, 🏙️, 🗺️, 🎭, 🍕, 🚕, ✨, 🌇
+  - TypeEmoji: 🗽 🌆 🚖 🏙️ 🗺️ 🎭 🍕 🚕 ✨ 🌇
 - query: “martial arts”
   - Apple: 🥋
-  - TypeEmoji: 🥋, 🏋️‍♂️, 🥊, 🧘‍♂️, 👊, ⚔️, 💪, 🤼‍♂️, 🏆, 🤸‍♀️
+  - TypeEmoji: 🥋 🏋️‍♂️ 🥊 🧘‍♂️ 👊 ⚔️ 💪 🤼‍♂️ 🏆 🤸‍♀️
 - query: “Finding Nemo”
   - Apple: (no results)
-  - TypeEmoji: 🐠, 🌊, 🐟, 🔍, 🎣, 🏝️, 🐳, 🐬, 🐙, 🌅
+  - TypeEmoji: 🐠 🌊 🐟 🔍 🎣 🏝️ 🐳 🐬 🐙 🌅
 
 [Try it for yourself](https://typeemoji.com/)!
