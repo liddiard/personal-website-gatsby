@@ -1,6 +1,6 @@
 ---
 title: Mail a PDF Online
-description: Mail a document to anywhere in the U.S. under 60 seconds
+description: Mail a document anywhere in the U.S. under 60 seconds
 year: 2016
 github: liddiard/mailpdf
 involvement: creator

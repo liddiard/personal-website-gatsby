@@ -7,9 +7,9 @@ import Layout from '../components/layout'
 const Skills = ({ data }) => (
   <ul className="skills">
     {data.edges.map(({ node }) =>
-      <li 
-        key={node.name} 
-        style={node.type === 'software' ? { color: '#6653ff', fontWeight: 'bold' } : {}}
+      <li
+        key={node.name}
+        style={node.type === 'software' ? { color: '#6653ff', fontWeight: '600' } : {}}
       >
         {node.name}
       </li>
@@ -37,7 +37,7 @@ const renderProjects = (edges) => (
             to={node.fields.slug}>
             {node.frontmatter.title}
           </Link>
-        : {node.frontmatter.description}
+          : {node.frontmatter.description}
         </li>
       ))}
   </ul>
