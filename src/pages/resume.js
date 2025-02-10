@@ -76,11 +76,11 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
       Computer Science and Linguistics, B.A.
     </div>
     <div className="tech-skills">
-    <h2>Technical Skills</h2>
+      <h2>Technical Skills</h2>
       <h3>Experienced <span className="deemphasized">(5+ years)</span></h3>
-      <p className="item">JavaScript, React, Node.js, HTML & CSS, Python, Django, API design</p>
+      <p className="item">JavaScript, React, Node.js, Python, Django, CSS, API design, UX design</p>
       <h3>Familiar <span className="deemphasized">(1–5 years)</span></h3>
-      <p className="item">TypeScript, Next.js, SQL, UX design</p>
+      <p className="item">TypeScript, Next.js, Vue.js, SQL</p>
     </div>
     <h2>Projects</h2>
     <ul className="projects item">
