@@ -89,7 +89,7 @@ Switching the Shelly to a DC wall adapter broke its analog input detection of th
 
 ### Fail-safe
 
-To simulate an “unlock door” button press with sufficient time for someone to get in, I needed to leave the relays closed for several seconds then reopen them. I had a concern that the relay close command could succeed, but the followup relay open command could fail. The building door would effectively be stuck unlocked.
+To simulate an “unlock door” button press with sufficient time for someone to get in, I needed to leave the relays closed for several seconds then reopen them. I had a concern that the relay close command could succeed, but a followup relay open command could fail. The building door would effectively be stuck unlocked.
 
 Fortunately, Shelly seems to have thought about this. Their API provides a single call that both flips a relay and instructs it to revert to its previous state after a number of seconds. I put this into a [Shelly script](https://gist.github.com/liddiard/b7f80a18b9713dbf5489f85f3077f95d).
 
@@ -109,7 +109,7 @@ I additionally set up a Home Assistant automation that monitors the relays’ st
 
 <figure>
   <img src="/project/smart-apartment-intercom/internal-wiring.jpg" alt="Overall internal intercom wiring" />
-  <figcaption>Internal wiring: a bit more chaotic in implementation than in the schematic</figcaption>
+  <figcaption>Internal wiring… a bit more chaotic in implementation than in the schematic</figcaption>
 </figure>
 
 <figure>
@@ -130,6 +130,6 @@ If I’m away, I can tap a push notification sent to my phone to unlock the door
   <figcaption>Push notification I receive when my call box button is pressed</figcaption>
 </figure>
 
-As a bonus, this setup presented me with an opportunity for keyless entry into the building. I’ve inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesn’t have my phone, so I don’t mind leaving one out there. It’s a minor but satisfying convenience.
+As a bonus, this setup presented me with an opportunity for keyless entry into the building. I inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesn’t have my phone, so I don’t mind leaving one out there. It’s a minor but satisfying convenience.
 
 My smartened apartment intercom means that I no longer have to worry about being home to buzz in a delivery or being jolted awake at odd hours by nocturnal button-pressing enthusiasts.
