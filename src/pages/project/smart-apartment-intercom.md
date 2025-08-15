@@ -58,7 +58,7 @@ Now, I had the basis for a solution.
 
 ## Hardware
 
-I needed to connect two sets of wires together via relays while also monitoring for the voltage signal of the buzz. A commenter on Chris’s article turned me on to the [Shelly Plus Uni](https://us.shelly.com/products/shelly-plus-uni) as a device that should fit the bill.
+I needed to connect two sets of wires together via relays while also monitoring for the voltage signal of the buzz. A commenter on Chris’s article turned me on to the [Shelly Plus Uni](https://us.shelly.com/products/shelly-plus-uni) as a device which should fit the bill.
 
 The board arrived, and I got to wiring everything up: first with alligator clips and jumper wires, then soldering a PCB that could act as a bridge between the intercom wiring and the Shelly.
 
@@ -85,7 +85,7 @@ I started off using a hefty [20,000mAh battery bank](https://www.amazon.com/dp/B
 
 ### Ground reference
 
-Switching the Shelly to a DC wall adapter broke its analog input detection of the buzz voltage. Upon a bit of AI-assisted debugging, I learned that this was caused by a [ground reference problem](<https://en.wikipedia.org/wiki/Ground_loop_(electricity)>). To solve it, I ended up integrating a [DC-DC isolated power converter](https://www.amazon.com/dp/B0F4DMW44V) to separate the PCB’s ground reference from mains ground.
+Switching the Shelly to a DC wall adapter broke its analog input detection of the buzz voltage. Upon a bit of AI-assisted debugging, I learned that this was caused by a [ground reference problem](<https://en.wikipedia.org/wiki/Ground_loop_(electricity)>). To solve it, I ended up integrating a [DC-DC isolated power converter](https://www.amazon.com/dp/B0F4DMW44V) to separate the PCB’s ground reference from [mains](https://en.wikipedia.org/wiki/Mains_electricity) ground.
 
 ### Fail-safe
 
