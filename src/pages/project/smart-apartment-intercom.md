@@ -33,7 +33,7 @@ The root of these frustrations is the garden-variety analog call box / intercom 
 
 [A blog post](https://chris-m-whong.medium.com/connecting-an-apartment-door-buzzer-to-a-smarthome-hub-4664cf6a3ce4) by fellow New Yorker [Chris Whong](https://chriswhong.com/) started me down the path of understanding call box wiring and how I might automate the basic intercom functions of detecting a buzz and unlocking the building door.
 
-Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants I’d seen online. My intercom board was also labeled differently than any I’d found (X, A, B, C, D), and triggering the door unlock didn’t appear to be quite as straightforward as connecting two wires.
+Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants I’d seen online. My intercom board was also labeled differently than any I’d found (X, A, B, C, D), and triggering the door unlock didn’t appear to be quite as straightforward as connecting two pins.
 
 <figure>
   <img src="/project/smart-apartment-intercom/intercom-pcb.jpg" alt="Intercom PCB with enigmatic pins X, A, B, C, D" />
