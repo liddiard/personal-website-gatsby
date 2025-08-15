@@ -13,11 +13,11 @@ type: software
 
 ## Problem
 
-I get lots of packages delivered to my 1800s-built apartment, and Iʼm not always home to buzz them in. Iʼve had _dozens_ of packages either gone missing, stolen, or deemed undeliverable. Not a great situation for the package carrier, the retailer, or me.
+I get lots of packages delivered to my 1800s-built apartment, and I’m not always home to buzz them in. I’ve had _dozens_ of packages either gone missing, stolen, or deemed undeliverable. Not a great situation for the package carrier, the retailer, or me.
 
-Furthermore, anyone on the street can button-mash the call box at any time of day or night, causing a piercing beep throughout the apartment. Itʼs been the source of a rude awakening on more than one occasion.
+Furthermore, anyone on the street can button-mash the call box at any time of day or night, causing a piercing beep throughout the apartment. It’s been the source of a rude awakening on more than one occasion.
 
-The root of these frustrations is the garden-variety analog call box / intercom system, which requires pressing an in-unit button to unlock the building door. I canʼt replace the buildingʼs access control with one of those fancy touchscreen systems theyʼve got on “luxury” buildings, but I figured I could at least smarten up the in-unit intercom.
+The root of these frustrations is the garden-variety analog call box / intercom system, which requires pressing an in-unit button to unlock the building door. I can’t replace the building’s access control with one of those fancy touchscreen systems they’ve got on “luxury” buildings, but I figured I could at least smarten up the in-unit intercom.
 
 <figure>
   <img src="/project/smart-apartment-intercom/call-box-new.jpg" alt="Expectation: a modern access control system with a touchscreen" />
@@ -33,20 +33,20 @@ The root of these frustrations is the garden-variety analog call box / intercom 
 
 [A blog post](https://chris-m-whong.medium.com/connecting-an-apartment-door-buzzer-to-a-smarthome-hub-4664cf6a3ce4) by fellow New Yorker [Chris Whong](https://chriswhong.com/) started me down the path of understanding call box wiring and how I might automate the basic intercom functions of detecting a buzz and unlocking the building door.
 
-Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants Iʼd seen online. My intercom board was also labeled differently than any Iʼd found (X, A, B, C, D), and triggering the door unlock didnʼt appear to be quite as straightforward as connecting two wires.
+Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants I’d seen online. My intercom board was also labeled differently than any I’d found (X, A, B, C, D), and triggering the door unlock didn’t appear to be quite as straightforward as connecting two wires.
 
 <figure>
   <img src="/project/smart-apartment-intercom/intercom-pcb.jpg" alt="Intercom PCB with enigmatic pins X, A, B, C, D" />
   <figcaption>Intercom PCB</figcaption>
 </figure>
 
-After some fruitless multimeter probing, I had the idea to ignore the board _inside_ the intercom and just focus on the handset _outside_ it. The handset emits a buzz tone when someone presses the call box, and it contains the button which when held down, engages the [electric strike](https://en.wikipedia.org/wiki/Electric_strike) on the building door to unlock it. Therefore, my thinking went, I just needed to understand and mimic whatʼs happening inside the handset.
+After some fruitless multimeter probing, I had the idea to ignore the board _inside_ the intercom and just focus on the handset _outside_ it. The handset emits a buzz tone when someone presses the call box, and it contains the button which when held down, engages the [electric strike](https://en.wikipedia.org/wiki/Electric_strike) on the building door to unlock it. Therefore, my thinking went, I just needed to understand and mimic what’s happening inside the handset.
 
 <figure>
   <img src="/project/smart-apartment-intercom/intercom-exterior.jpg" alt="Intercom with a landline phone-style handset" />
 </figure>
 
-A delicate, non-security-deposit-violating prying open of the handset later, I saw I was working with the four wires of an [RJ11/RJ22 connector](https://en.wikipedia.org/wiki/Registered_jack): yellow, green, red, and black. Each wireʼs purpose isnʼt standardized for an application like this, but the internal wiring of the handset told me what I needed to know.
+A delicate, non-security-deposit-violating prying open of the handset later, I saw I was working with the four wires of an [RJ11/RJ22 connector](https://en.wikipedia.org/wiki/Registered_jack): yellow, green, red, and black. Each wire’s purpose isn’t standardized for an application like this, but the internal wiring of the handset told me what I needed to know.
 
 <figure>
   <img src="/project/smart-apartment-intercom/handset-internals.jpg" alt="Intercom handset internal wiring" />
@@ -69,7 +69,7 @@ The board arrived, and I got to wiring everything up: first with alligator clips
 
 ## Issues & fixes
 
-Iʼd like to say that everything worked flawlessly from the get-go, but of course thatʼs never the case.
+I’d like to say that everything worked flawlessly from the get-go, but of course that’s never the case.
 
 ### Buzz detection
 
@@ -79,13 +79,13 @@ Chris’s article talks about detecting the [pulsed DC](https://en.wikipedia.org
 
 ### Power source
 
-I was optimistic about powering the Shelly board from the intercom box, but unfortunately that didn’t pan out. The power available there would interrupt itself when connecting the four wires to give the “unlock” signal, and aside from those wires I couldnʼt pull the right volts/amps the Shelly requires. YMMV.
+I was optimistic about powering the Shelly board from the intercom box, but unfortunately that didn’t pan out. The power available there would interrupt itself when connecting the four wires to give the “unlock” signal, and aside from those wires I couldn’t pull the right volts/amps the Shelly requires. YMMV.
 
-I started off using a hefty [20,000mAh battery bank](https://www.amazon.com/dp/B07H7LFPYX) but soon realized Iʼd need to recharge it every few days. The Shellyʼs not _that_ power hungry, but it uses Wi-Fi for communication which can only be so efficient. However, it turns out that moving from a battery power source to a DC wall adapter caused another fun problem….
+I started off using a hefty [20,000mAh battery bank](https://www.amazon.com/dp/B07H7LFPYX) but soon realized I’d need to recharge it every few days. The Shelly’s not _that_ power hungry, but it uses Wi-Fi for communication which can only be so efficient. However, it turns out that moving from a battery power source to a DC wall adapter caused another fun problem….
 
 ### Ground reference
 
-Switching the Shelly to a DC wall adapter broke its analog input detection of the buzz voltage. Upon a bit of AI-assisted debugging, I learned that this was caused by a [ground reference problem](<https://en.wikipedia.org/wiki/Ground_loop_(electricity)>). To solve it, I ended up integrating a [DC-DC isolated power converter](https://www.amazon.com/dp/B0F4DMW44V) to separate the PCBʼs ground reference from mains ground.
+Switching the Shelly to a DC wall adapter broke its analog input detection of the buzz voltage. Upon a bit of AI-assisted debugging, I learned that this was caused by a [ground reference problem](<https://en.wikipedia.org/wiki/Ground_loop_(electricity)>). To solve it, I ended up integrating a [DC-DC isolated power converter](https://www.amazon.com/dp/B0F4DMW44V) to separate the PCB’s ground reference from mains ground.
 
 ### Fail-safe
 
@@ -93,13 +93,13 @@ To simulate an “unlock door” button press with sufficient time for someone t
 
 Fortunately, Shelly seems to have thought about this. Their API provides a single call that both flips a relay and instructs it to revert to its previous state after a number of seconds. I put this into a [Shelly script](https://gist.github.com/liddiard/b7f80a18b9713dbf5489f85f3077f95d).
 
-I additionally set up a Home Assistant automation that monitors the relaysʼ state. If theyʼve been closed for more than 15 seconds, it repeatedly attempts to open them and sets off alarm bells for me to investigate.
+I additionally set up a Home Assistant automation that monitors the relays’ state. If they’ve been closed for more than 15 seconds, it repeatedly attempts to open them and sets off alarm bells for me to investigate.
 
 ## Finished product
 
 <figure>
   <img src="/project/smart-apartment-intercom/pcb-detail.jpg" alt="PCB I soldered to accept and isolate USB power in, and to bridge connections between the intercom and the Shelly Plus Uni" />
-  <figcaption>PCB I soldered to bridge between the intercomʼs board and the Shelly Plus Uni. USB power comes in the bottom left and passes through a DC-DC isolated power converter (black rectangular cuboid) before continuing to the Shelly.</figcaption>
+  <figcaption>PCB I soldered to bridge between the intercom’s board and the Shelly Plus Uni. USB power comes in the bottom left and passes through a DC-DC isolated power converter (black rectangular cuboid) before continuing to the Shelly.</figcaption>
 </figure>
 
 <figure>
@@ -121,15 +121,15 @@ I additionally set up a Home Assistant automation that monitors the relaysʼ sta
 
 So how does this all come together? [Home Assistant](https://www.home-assistant.io/) is the brains of the operation, which [integrates with Shelly devices](https://www.home-assistant.io/integrations/shelly/).
 
-HA detects when the buzzer voltage jumps above a threshold, indicating a call box press. If my phone isnʼt in “Sleeping” or “Do Not Disturb” modes, it broadcasts an announcement over my smart speakers. If Iʼm home, I can just respond verbally (e.g., “Alexa, open the door”).
+HA detects when the buzzer voltage jumps above a threshold, indicating a call box press. If my phone isn’t in “Sleeping” or “Do Not Disturb” modes, it broadcasts an announcement over my smart speakers. If I’m home, I can just respond verbally (e.g., “Alexa, open the door”).
 
-If Iʼm away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed in the last 60 seconds.
+If I’m away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed in the last 60 seconds.
 
 <figure>
   <img src="/project/smart-apartment-intercom/ha-buzz-notification.png" alt="Home Assistant &quot;door buzzed&quot; notification on Android" />
   <figcaption>Push notification I receive when my call box button is pressed</figcaption>
 </figure>
 
-As a bonus, this setup presented me with an opportunity for keyless entry into the building. Iʼve inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesnʼt have my phone, so I donʼt mind leaving one out there. Itʼs a minor but satisfying convenience.
+As a bonus, this setup presented me with an opportunity for keyless entry into the building. I’ve inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesn’t have my phone, so I don’t mind leaving one out there. It’s a minor but satisfying convenience.
 
 My smartened apartment intercom means that I no longer have to worry about being home to buzz in a delivery or being jolted awake at odd hours by nocturnal button-pressing enthusiasts.
