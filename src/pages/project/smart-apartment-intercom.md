@@ -75,7 +75,7 @@ Iʼd like to say that everything worked flawlessly from the get-go, but of cours
 
 Through trial and error, I discovered that the buzzer tone actually comes through the _bottom_ of the handset (the “microphone”) rather than through the _top_ speaker. It also took me embarrasingly long to realize that the rocker of the handset needs to be pressed (as if the phone were hung up) for the beep to come through.
 
-Chris’s article talks about detecting the pulsed DC signal of the buzz, but I found that pressing the button downstairs raises a reliable 9 VDC between red and black wires. The Shelly has a pulse counter which I likely could have employed here, but I stuck with its analog input for simplicity.
+Chris’s article talks about detecting the [pulsed DC](https://en.wikipedia.org/wiki/Pulsed_DC) signal of the buzz, but I found that pressing the button downstairs raises a reliable 9 VDC between red and black wires. The Shelly has a pulse counter which I likely could have employed here, but I stuck with its analog input for simplicity.
 
 ### Power source
 
