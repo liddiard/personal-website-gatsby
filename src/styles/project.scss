@@ -12,11 +12,19 @@ main.project {
       margin: 0;
     }
 
-    h2 {
+    h2,
+    h3 {
       margin: 0.5em 0;
-      font-size: 1.5em;
       line-height: 1.2;
       font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.2em;
     }
 
     .article-body {
@@ -54,7 +62,7 @@ main.project {
 
   figcaption {
     margin: 0.25em 0 1.5em;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .project-link {
@@ -77,6 +85,24 @@ main.project {
         margin-top: 0.2em;
         display: block;
       }
+    }
+  }
+
+  &.article-layout {
+    max-width: 680px;
+    font-size: 1.1em;
+
+    article {
+      width: 100%;
+      float: none;
+    }
+
+    aside {
+      display: none;
+    }
+
+    figure {
+      margin: 0;
     }
   }
 

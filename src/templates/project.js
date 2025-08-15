@@ -48,8 +48,10 @@ const Project = ({ data }) => {
     metadata = post.frontmatter,
     { media, description } = metadata,
     firstImage = media.find(m => m.type === 'image'),
-    firstImagePath = firstImage && getMediaPath(post, firstImage)
+    firstImagePath = firstImage && getMediaPath(post, firstImage),
+    isArticleLayout = metadata.layout === 'article'
 
+  console.log('metadata', metadata)
   const handleLinkClick = (ev) => {
     const { linkConfirmation } = metadata
     if (!linkConfirmation) {
@@ -67,7 +69,7 @@ const Project = ({ data }) => {
     link = <tr>
       <td>Link</td>
       <td>
-        <OutboundLink 
+        <OutboundLink
           href={metadata.link}
           target="_blank"
           rel="noopener noreferrer"
@@ -91,7 +93,15 @@ const Project = ({ data }) => {
   }
 
   return (
-    <Layout page="project" pageTitle={metadata.title} meta={{ description, image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`}}>
+    <Layout
+      page="project"
+      pageTitle={metadata.title}
+      className={isArticleLayout ? 'article-layout' : ''}
+      meta={{
+        description,
+        image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`
+      }}
+    >
       <article>
         <h1>{metadata.title}</h1>
         <h2>{metadata.description}</h2>
@@ -133,6 +143,7 @@ export const query = graphql`
         linkConfirmation
         github
         skills
+        layout
         media {
           caption
           filename

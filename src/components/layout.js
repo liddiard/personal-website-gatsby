@@ -3,9 +3,9 @@ import Helmet from 'react-helmet'
 import Footer from './footer'
 import Header from './header'
 
-const Layout = ({ page, children, pageTitle, meta = {} }) => (
+const Layout = ({ page = '', children, pageTitle, className = '', meta = {} }) => (
   <>
-    <main className={`container ${page ? page : ''}`}>
+    <main className={['container', page, className].join(' ')}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>{[pageTitle, 'Harrison Liddiard'].filter(Boolean).join(' | ')}</title>
