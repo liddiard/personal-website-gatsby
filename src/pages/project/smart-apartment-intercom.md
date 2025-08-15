@@ -21,12 +21,12 @@ The root of these frustrations is the garden-variety analog call box / intercom 
 
 <figure>
   <img src="/project/smart-apartment-intercom/call-box-new.jpg" alt="Expectation: a modern access control system with a touchscreen" />
-  <figcaption>Expectation <span style="font-size: 0.8em">(source: <a href="https://butterflymx.com/products/video-intercoms/12-surface/" target="_blank" rel="noopener noreferrer">ButterflyMX</a>)</span></figcaption>
+  <figcaption>Expectation… <span style="font-size: 0.8em">(source: <a href="https://butterflymx.com/products/video-intercoms/12-surface/" target="_blank" rel="noopener noreferrer">ButterflyMX</a>)</span></figcaption>
 </figure>
 
 <figure>
   <img src="/project/smart-apartment-intercom/call-box-old.jpg" alt="Reality: a decrepit call box with simple buttons" />
-  <figcaption>Reality</figcaption>
+  <figcaption>…Reality</figcaption>
 </figure>
 
 ## Research
