@@ -132,4 +132,4 @@ If I’m away, I can tap a push notification sent to my phone to unlock the door
 
 As a bonus, this setup presented me with an opportunity for keyless entry into the building. I inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesn’t have my phone, so I don’t mind leaving one out there. It’s a minor but satisfying convenience.
 
-My smartened apartment intercom means that I no longer have to worry about being home to buzz in a delivery or being jolted awake at odd hours by nocturnal button-pressing enthusiasts.
+My smartened apartment intercom means that I no longer have to worry about being home to buzz in a delivery or being jolted awake at odd hours by nocturnal button-pressing enthusiasts!
