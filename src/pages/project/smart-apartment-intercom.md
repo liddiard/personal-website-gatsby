@@ -99,7 +99,7 @@ I additionally set up a Home Assistant automation that monitors the relays’ st
 
 <figure>
   <img src="/project/smart-apartment-intercom/pcb-detail.jpg" alt="PCB I soldered to accept and isolate USB power in, and to bridge connections between the intercom and the Shelly Plus Uni" />
-  <figcaption>PCB I soldered to bridge between the intercom’s board and the Shelly Plus Uni. USB power comes in the bottom left and passes through a DC-DC isolated power converter (black rectangular cuboid) before continuing to the Shelly.</figcaption>
+  <figcaption>PCB I soldered to bridge between the intercom’s board and the Shelly Plus Uni. USB power comes in the bottom left and passes through a DC-DC isolated power converter (black cuboid) before continuing to the Shelly.</figcaption>
 </figure>
 
 <figure>
