@@ -123,7 +123,7 @@ So how does this all come together? [Home Assistant](https://www.home-assistant.
 
 HA detects when the buzzer voltage jumps above a threshold, indicating a call box press. As long as my phone isn’t in “Sleeping” or “Do Not Disturb” modes, it broadcasts an announcement over my smart speakers. If I’m home, I can just respond verbally (e.g., “Alexa, open the door”).
 
-If I’m away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed wihtin the last minute.
+If I’m away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed within the last minute.
 
 <figure>
   <img src="/project/smart-apartment-intercom/ha-buzz-notification.png" alt="Home Assistant &quot;door buzzed&quot; notification on Android" />
