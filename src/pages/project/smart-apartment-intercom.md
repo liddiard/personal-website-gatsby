@@ -109,7 +109,7 @@ I additionally set up a Home Assistant automation that monitors the relays’ st
 
 <figure>
   <img src="/project/smart-apartment-intercom/internal-wiring.jpg" alt="Overall internal intercom wiring" />
-  <figcaption>Internal wiring… a bit more chaotic in implementation than in the schematic</figcaption>
+  <figcaption>Internal wiring – a bit more chaotic in implementation than in the schematic</figcaption>
 </figure>
 
 <figure>
