@@ -17,7 +17,7 @@ I get lots of packages delivered to my 1800s-built apartment, and I’m not alwa
 
 Furthermore, anyone on the street can button-mash the call box at any time of day or night, causing a piercing beep throughout the apartment. It’s been the source of a rude awakening on more than one occasion.
 
-The root of these frustrations is the garden-variety analog call box / intercom system, which requires pressing an in-unit button to unlock the building door. I can’t replace the building’s access control with one of those fancy touchscreen systems they’ve got on “luxury” buildings, but I figured I could at least smarten up the in-unit intercom.
+The root of these frustrations is a garden-variety analog call box / intercom system, which requires pressing an in-unit button to unlock the building door. I can’t replace the building’s access control with one of those fancy touchscreen systems they’ve got on “luxury” buildings, but I figured I could at least smarten up the in-unit intercom.
 
 <figure>
   <img src="/project/smart-apartment-intercom/call-box-new.jpg" alt="Expectation: a modern access control system with a touchscreen" />
@@ -121,9 +121,9 @@ I additionally set up a Home Assistant automation that monitors the relays’ st
 
 So how does this all come together? [Home Assistant](https://www.home-assistant.io/) is the brains of the operation, which [integrates with Shelly devices](https://www.home-assistant.io/integrations/shelly/).
 
-HA detects when the buzzer voltage jumps above a threshold, indicating a call box press. If my phone isn’t in “Sleeping” or “Do Not Disturb” modes, it broadcasts an announcement over my smart speakers. If I’m home, I can just respond verbally (e.g., “Alexa, open the door”).
+HA detects when the buzzer voltage jumps above a threshold, indicating a call box press. As long as my phone isn’t in “Sleeping” or “Do Not Disturb” modes, it broadcasts an announcement over my smart speakers. If I’m home, I can just respond verbally (e.g., “Alexa, open the door”).
 
-If I’m away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed in the last 60 seconds.
+If I’m away, I can tap a push notification sent to my phone to unlock the door. I also have my HA dashboard configured to show a door unlock button if the call box was buzzed wihtin the last minute.
 
 <figure>
   <img src="/project/smart-apartment-intercom/ha-buzz-notification.png" alt="Home Assistant &quot;door buzzed&quot; notification on Android" />
