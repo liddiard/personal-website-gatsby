@@ -33,7 +33,7 @@ The root of these frustrations is a garden-variety analog call box / intercom sy
 
 [A blog post](https://chris-m-whong.medium.com/connecting-an-apartment-door-buzzer-to-a-smarthome-hub-4664cf6a3ce4) by fellow New Yorker [Chris Whong](https://chriswhong.com/) started me down the path of understanding call box wiring and how I might automate the basic intercom functions of detecting a buzz and unlocking the building door.
 
-Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants I’d seen online. My intercom board was also labeled differently than any I’d found (X, A, B, C, D), and triggering the door unlock didn’t appear to be quite as straightforward as connecting two pins.
+Unfortunately, I appeared to be working with a 5-wire system rather than the simpler 3- or 4-wire variants I’d seen online. My intercom board was also labeled differently than any I’d found (X, A, B, C, D), and triggering the door unlock didn’t appear to be quite as straightforward as bridging two pins.
 
 <figure>
   <img src="/project/smart-apartment-intercom/intercom-pcb.jpg" alt="Intercom PCB with enigmatic pins X, A, B, C, D" />
@@ -73,9 +73,9 @@ I’d like to say that everything worked flawlessly from the get-go, but of cour
 
 ### Buzz detection
 
-Through trial and error, I discovered that the buzzer tone actually comes through the _bottom_ of the handset (the “microphone”) rather than through the _top_ speaker. It also took me embarrasingly long to realize that the rocker of the handset needs to be pressed (as if the phone were hung up) for the beep to come through.
+Through trial and error, I discovered that the buzzer tone actually comes through the _bottom_ of the handset (the “microphone”) rather than through the _top_ speaker. It also took me embarrassingly long to realize that the rocker of the handset needs to be pressed (as if the phone were hung up) for the beep to come through.
 
-Chris’s article talks about detecting the [pulsed DC](https://en.wikipedia.org/wiki/Pulsed_DC) signal of the buzz, but I found that pressing the button downstairs raises a reliable 9 VDC between red and black wires. The Shelly has a pulse counter which I likely could have employed here, but I stuck with its analog input for simplicity.
+Chris’s article discusses detecting the [pulsed DC](https://en.wikipedia.org/wiki/Pulsed_DC) signal of the buzz, but I found that pressing the button downstairs raises a reliable 9 VDC between red and black wires. The Shelly has a pulse counter which I likely could have employed here, but I stuck with its analog input for simplicity.
 
 ### Power source
 
