@@ -133,3 +133,18 @@ If I’m away, I can tap a push notification sent to my phone to unlock the door
 As a bonus, this setup presented me with an opportunity for keyless entry into the building. I inconspicuously placed an NFC tag near the entryway which I can scan to unlock the door. These cost [less than 50¢ each](https://www.amazon.com/dp/B07N38MMTT) and are nonfunctional to anyone who doesn’t have my phone, so I don’t mind leaving one out there. It’s a minor but satisfying convenience.
 
 My smartened apartment intercom means that I no longer have to worry about being home to buzz in a delivery or being jolted awake at odd hours by nocturnal button-pressing enthusiasts!
+
+---
+
+**2026 update:** The apartment owners replaced my “telephone-style” intercom with a more common box: 4-wire (1, 2, 3, X), 3-button (TALK, LISTEN, DOOR). This setup is [described in detail here](https://chris-m-whong.medium.com/connecting-an-apartment-door-buzzer-to-a-smarthome-hub-4664cf6a3ce4). I used this as an opportunity to revisit and simplify my circuitry:
+
+<figure>
+  <img src="/project/smart-apartment-intercom/schematic-v2.png" alt="Schematic version 2" />
+  <figcaption>Schematic V2</figcaption>
+</figure>
+
+The updated version reduces the number of connections and now only requires one relay.
+
+In this new setup, I replaced the speaker with a similar-ohm resistor. I personally care more about silencing the loud warbling tone when the call box is rung than I do being able to talk/listen on the intercom. You could, however, leave the speaker wired up and retain the buzz tone and talk/listen functionality while _also_ detecting the tone electronically.
+
+The only other hiccup with my new intercom is that the enclosure is made of metal rather than plastic, so the Wi-Fi signal has a lot tougher of a time getting through. To address this, I purchased a cheap [2.4 GHz range extender](https://www.amazon.com/dp/B08DHLCLCY) ($15 as of writing). With it plugged in even a few meters away, the Shelly board’s intermittent connection issue was resolved.
