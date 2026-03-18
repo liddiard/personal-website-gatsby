@@ -14,8 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "engines": {
-    "node": "20",
-    "npm": "10"
+    "node": "24",
+    "npm": "11"
   },
   "dependencies": {
     "gatsby": "^5.16.1",
@@ -26,10 +26,10 @@
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-json": "^5.16.0",
     "gatsby-transformer-remark": "^6.16.0",
-    "node-sass": "^9.0.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.98.0"
   },
   "devDependencies": {
     "prettier": "^3.8.1"

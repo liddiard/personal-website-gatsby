@@ -1,4 +1,4 @@
-@import "globals";
+@use "globals";
 
 main.project {
   max-width: 1280px;
@@ -29,7 +29,7 @@ main.project {
 
     .article-body {
       margin: 0.5em 0 2em; // bottom margin for mobile
-      border-bottom: $separator-border;
+      border-bottom: globals.$separator-border;
     }
 
     li {
@@ -45,7 +45,7 @@ main.project {
   img,
   video {
     max-width: 100%;
-    border: $separator-border;
+    border: globals.$separator-border;
   }
 
   figure {
@@ -106,7 +106,7 @@ main.project {
     }
   }
 
-  @include media-query($on-laptop) {
+  @include globals.media-query(globals.$on-laptop) {
     article,
     aside {
       width: 100%;

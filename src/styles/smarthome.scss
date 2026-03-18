@@ -1,4 +1,4 @@
-@import "globals";
+@use "globals";
 
 .smarthome {
   max-width: 640px;
@@ -6,7 +6,7 @@
   section {
     margin: 1em;
     padding: 1em;
-    background-color: rgba($primary-color, 0.15);
+    background-color: rgba(globals.$primary-color, 0.15);
 
     ul {
       font-size: 1.4em;
@@ -19,7 +19,7 @@
   }
 }
 
-@include media-query($on-palm) {
+@include globals.media-query(globals.$on-palm) {
   .smarthome {
     font-size: 0.85em;
   }

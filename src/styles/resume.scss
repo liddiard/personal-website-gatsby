@@ -1,3 +1,5 @@
+@use "globals";
+
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $oxygen: "Oxygen", $helvetica;
 $gray: #888;
@@ -189,7 +191,7 @@ main.resume {
     text-align: center;
   }
 
-  @include media-query($on-palm) {
+  @include globals.media-query(globals.$on-palm) {
     .col {
       float: none;
 

@@ -1,4 +1,5 @@
-@import "globals";
+@use "sass:meta";
+@use "globals";
 
 :root {
   color-scheme: light dark;
@@ -27,12 +28,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  border-bottom: 0.12em solid $primary-color;
+  border-bottom: 0.12em solid globals.$primary-color;
   transition: 0.1s all;
 }
 
 a:hover {
-  color: $primary-color;
+  color: globals.$primary-color;
   border-width: 0.2em;
 }
 
@@ -55,7 +56,7 @@ h6 {
 h1.name {
   font-size: 3.9em;
   margin: 0;
-  border-bottom: 4px solid $primary-color;
+  border-bottom: 4px solid globals.$primary-color;
   padding-bottom: 0.1em;
 }
 
@@ -72,7 +73,7 @@ h3 {
 }
 
 code {
-  font-family: $mono;
+  font-family: globals.$mono;
 }
 
 ul,
@@ -110,18 +111,18 @@ nav {
 
 hr {
   border: none;
-  border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid globals.$primary-color;
   margin: 1.5em 0;
 }
 
 main {
   margin: 0 auto;
-  box-shadow: 0 0 512px rgba($primary-color, 0.15);
-  padding: 1.5rem $wrapper-horizontal-padding;
+  box-shadow: 0 0 512px rgba(globals.$primary-color, 0.15);
+  padding: 1.5rem globals.$wrapper-horizontal-padding;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-@include media-query($on-laptop) {
+@include globals.media-query(globals.$on-laptop) {
   main {
     padding: 1.5rem;
   }
@@ -129,7 +130,7 @@ main {
 
 main.front,
 main.credits {
-  max-width: calc(640px + #{$wrapper-horizontal-padding * 2});
+  max-width: calc(640px + #{globals.$wrapper-horizontal-padding * 2});
 }
 
 main.front {
@@ -188,15 +189,15 @@ footer {
 }
 
 .primary-accent {
-  color: $primary-color;
+  color: globals.$primary-color;
 }
 
 .giphy-embed {
   // used on the 404 page
-  border: $separator-border;
+  border: globals.$separator-border;
 }
 
-@import "credits";
-@import "project";
-@import "resume";
-@import "smarthome";
+@include meta.load-css("credits");
+@include meta.load-css("project");
+@include meta.load-css("resume");
+@include meta.load-css("smarthome");
