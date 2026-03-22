@@ -3,7 +3,7 @@ title: TrainTracker
 description: Live tracking North American intercity passenger rail
 year: 2026
 involvement: creator
-skills: Next.js, TypeScript, Web Push, maps & geospatial analysis
+skills: Next.js, TypeScript, Web Push, mapping & geospatial analysis
 link: https://traintracker.app
 github: liddiard/traintracker
 media:
@@ -38,4 +38,4 @@ This was also my first experience with the web [Push API](https://developer.mozi
 
 For TrainTracker on mobile, I wanted a bottom sheet pattern similar to Google Maps, where a sheet with info about a train or station appears over the map and can “snap” fully open, halfway open, or closed. To achieve this, I wrapped [react-modal-sheet](https://github.com/Temzasse/react-modal-sheet) and [modified it](https://github.com/liddiard/traintracker/blob/main/app/components/BottomSheet.tsx) so a swipe gesture contextually switches between dragging the sheet vs. scrolling the content within the sheet in an intuitive way.
 
-TrainTracker gives North American rail enthusiasts and commuters a better way to manage their journey.
+TrainTracker gives North American rail enthusiasts and commuters a better way to follow along their journey.
