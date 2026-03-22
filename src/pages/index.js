@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 
 const Skills = ({ data }) => (
@@ -101,5 +102,9 @@ export const query = graphql`
     }
   }
 `
+
+export function Head() {
+  return <Seo meta={{ description: metaDescription }} />
+}
 
 export default Home

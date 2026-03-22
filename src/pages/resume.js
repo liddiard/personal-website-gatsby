@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const metaDescription = 'Harrison Liddiard’s resumé, including PayPal, The New York Times, hackNY, UCLA Daily Bruin, and UCLA Athletics.';
-const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ description: metaDescription }}>
+const Resume = () => <Layout page="resume">
   <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" type="text/css"></link>
   <h1 className="page-title">Resumé</h1>
   <header className="header-resume">
@@ -110,5 +111,9 @@ const Resume = () => <Layout page="resume" pageTitle="Resumé" meta={{ descripti
     </div>
   </div>
 </Layout>
+
+export function Head() {
+  return <Seo pageTitle="Resumé" meta={{ description: metaDescription }} />
+}
 
 export default Resume

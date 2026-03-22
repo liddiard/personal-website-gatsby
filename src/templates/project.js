@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const getMediaPath = (post, media) =>
@@ -153,5 +154,21 @@ export const query = graphql`
     }
   }
 `
+
+export function Head({ data }) {
+  const post = data.markdownRemark
+  const { title, description, media } = post.frontmatter
+  const firstImage = media.find(m => m.type === 'image')
+  const firstImagePath = firstImage && post.fields.slug + firstImage.filename
+  return (
+    <Seo
+      pageTitle={title}
+      meta={{
+        description,
+        image: firstImagePath && `https://harrisonliddiard.com${firstImagePath}`
+      }}
+    />
+  )
+}
 
 export default Project
