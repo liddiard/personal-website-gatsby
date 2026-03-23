@@ -19,6 +19,9 @@ media:
   - type: image
     filename: station-detail.png
     caption: Station detail view, showing a 3D map style
+  - type: video
+    filename: 3d-animation.mp4
+    caption: Buttery-smooth animation with lots of caching and optimization
 type: software
 ---
 
