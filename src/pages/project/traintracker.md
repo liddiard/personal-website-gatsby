@@ -21,7 +21,7 @@ media:
     caption: Station detail view, showing a 3D map style
   - type: video
     filename: 3d-animation.mp4
-    caption: Buttery-smooth animation with lots of caching and optimization
+    caption: Buttery-smooth animation through lots of caching and optimizations
 type: software
 ---
 
@@ -33,7 +33,7 @@ Enter [TrainTracker](https://traintracker.app/), a modern app with a snappy map,
 
 Powering it on the backend is much data-wrangling from official and unofficial sources to source rail track and station data. Live train updates required decrypting Amtrak’s obfuscated API and parsing its frankly insane response structure into a [clean API](https://traintracker.app/api/trains) (shout-out to Greg Walker for [reverse-engineering the decryption process](https://suddenlygreg.com/blog/2023-11-02-amtrak-api/)). VIA Rail and Brightline data is mercifully a bit more straightforward.
 
-For the map, I used [MapLibre GL JS](https://maplibre.org/projects/gl-js/) with vector tiles from [OpenFreeMap](https://openfreemap.org/). The map shows estimated real-time train positions using a combination of GPS location and timetables. This required some [pretty intensive code](https://github.com/liddiard/traintracker/blob/main/app/components/Map/calc.ts) to “snap” a train’s position and heading on the appropriate track and smoothly animate it.
+For the map, I used [MapLibre GL JS](https://maplibre.org/projects/gl-js/) with vector tiles from [OpenFreeMap](https://openfreemap.org/). The map shows estimated real-time train positions using a combination of GPS location and timetables. This required some [pretty involved code](https://github.com/liddiard/traintracker/blob/main/app/components/Map/calc.ts) using [Turf.js](https://turfjs.org/) to “snap” a train’s position and heading on the appropriate track and smoothly animate it.
 
 I employed several performance optimizations to make this responsive, including caching, culling elements outside the viewport, and leaning on CSS transitions to create smooth animations between JavaScript-calculated updates.
 
@@ -41,4 +41,4 @@ This was also my first experience with the web [Push API](https://developer.mozi
 
 For TrainTracker on mobile, I wanted a bottom sheet pattern similar to Google Maps, where a sheet with info about a train or station appears over the map and can “snap” fully open, halfway open, or closed. To achieve this, I wrapped [react-modal-sheet](https://github.com/Temzasse/react-modal-sheet) and [modified it](https://github.com/liddiard/traintracker/blob/main/app/components/BottomSheet.tsx) so a swipe gesture contextually switches between dragging the sheet vs. scrolling the content within the sheet in an intuitive way.
 
-TrainTracker gives North American rail enthusiasts and commuters a better way to follow along their journey.
+TrainTracker gives North American rail enthusiasts and commuters a better way to manage their journeys.
