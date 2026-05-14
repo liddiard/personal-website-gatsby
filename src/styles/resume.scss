@@ -81,20 +81,24 @@ main.resume {
     #contact {
       list-style-type: none;
       padding: 0;
-      text-align: center;
-      font-size: 1em;
       margin: 0.5em 0 0;
+      text-align: center;
       font-family: $helvetica;
 
       img {
         width: 18px;
-        vertical-align: text-bottom;
-        margin-right: 0.2em;
       }
 
       li {
-        display: inline-block;
-        padding: 0 0.5em;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+        margin: 0 0.75em;
+      }
+
+      a {
+        border: none;
+        text-decoration: none;
       }
     }
 
@@ -129,6 +133,10 @@ main.resume {
     ul {
       list-style-type: square;
       padding: 0 0 0 1.2em;
+      margin: 0.6em 0;
+    }
+
+    p {
       margin: 0.6em 0;
     }
   }
@@ -167,20 +175,6 @@ main.resume {
       img {
         filter: invert(1);
       }
-    }
-  }
-
-  .more {
-    clear: both;
-    overflow: hidden;
-    display: none;
-
-    .experience {
-      float: left;
-    }
-
-    .projects {
-      float: right;
     }
   }
 
@@ -248,7 +242,7 @@ main.resume {
 
   main.resume {
     box-shadow: none;
-    
+
     .more {
       display: block;
     }
