@@ -31,9 +31,9 @@ const Resume = () => <Layout page="resume">
       <h4 className="company">PayPal</h4>
       <ul>
         <li>Launched new merchant onboarding, cutting required signup fields by 60% and introducing upfront compliance verification, contributing to +$35M ARR.</li>
-        <li>Redesigned personal-to-business account onboarding, reducing account downgrades 64% (~$4M/yr support cost savings), and driving 68K net-new accounts (~$2M/yr incremental revenue).</li>
-        <li>Designed and ran an A/B test inverting the onboarding funnel, letting merchants create an invoice before signup, doubling signup and activation rates.</li>
-        <li>Building an AI-powered checkout integration assistant to agentically crawl merchant sites, assess tech stacks, and generate personalized integration guides.</li>
+        <li>Redesigned personal-to-business account conversion, reducing reversals 64% (~$4M/yr support cost savings), and driving 68K net-new signups (~$2M/yr incremental revenue).</li>
+        <li>Designed and ran A/B test inverting the onboarding funnel, letting users create an invoice before signup, doubling signup and activation rates.</li>
+        <li>Building AI-powered payment integration assistant to agentically crawl merchant sites, assess tech stacks, and create tailored integration guides.</li>
       </ul>
     </div>
     <div className="item">
